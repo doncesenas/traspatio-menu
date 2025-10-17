@@ -20,17 +20,19 @@ const { title = "Traspatio Mar & Grill", description = "Menú digital" } =
     <body class="relative min-h-screen flex flex-col font-sans text-stone-100">
         <!-- 🌆 Imagen de fondo y degradado -->
         <div
-            class="fixed inset-0 -z-10 bg-[url('/src/assets/bckg2.JPEG')] bg-cover bg-center bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/100 before:via-black/80 before:to-black/50"
+            <div
+            class="fixed inset-0 -z-10 bg-[url('/src/assets/bckg2.JPEG')] bg-cover bg-center md:bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/100 before:via-black/80 before:to-black/30"
         >
         </div>
-
-        <!-- 🔸 Navbar ahora transparente -->
-        <Navbar />
-
-        <main class="pt-20 flex-1">
-            <slot />
-        </main>
-
-        <Footer />
+        >
     </body>
+
+    <!-- 🔸 Navbar ahora transparente -->
+    <Navbar />
+
+    <main class="pt-20 flex-1">
+        <slot />
+    </main>
+
+    <Footer />
 </html>

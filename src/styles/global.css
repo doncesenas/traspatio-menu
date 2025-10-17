@@ -26,6 +26,15 @@
     }
 }
 
+.bg-fake-fixed {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(0);
+}
+
+
 .card-hover:hover {
     animation: cardHover 0.3s ease-in-out forwards;
 }
