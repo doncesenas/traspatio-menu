@@ -1,0 +1,26 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Inicio | Traspatio Mar & Grill">
+    <section class="pt-24 text-center">
+        <img
+            src="public/logo.jpg"
+            alt="Logo Traspatio Mar & Grill"
+            class="w-32 h-32 mx-auto rounded-full object-cover shadow-md mb-6"
+        />
+        <h1 class="text-4xl font-bold text-[#79B743] mb-4">
+            Bienvenido a Traspatio Mar & Grill
+        </h1>
+        <p class="text-lg text-[#FFFFF] -600 mb-6">
+            Disfruta el sabor auténtico del mar y la parrilla.
+        </p>
+        <a
+            href="/menu"
+            class="bg-[#9EBF6B] text-white px-6 py-3 rounded-lg hover:bg-[#84BF49] transition"
+        >
+            Ver menú
+        </a>
+    </section>
+</BaseLayout>

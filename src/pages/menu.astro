@@ -1,0 +1,342 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+import MenuCard from "../components/MenuCard.astro";
+---
+
+<BaseLayout title="Menú | Traspatio Mar & Grill">
+    <section class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+        <h1 class="text-4xl font-bold text-center text-[#79B743] mb-10">
+            Nuestro Menú
+        </h1>
+
+        <!-- Sections -->
+        <div
+            id="menu-tabs"
+            class="flex justify-center flex-wrap gap-6 mb-10 text-lg font-medium text-stone-100"
+        >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer active"
+                data-section="todo">Todo</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="entradas">Entradas</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="mariscos">Mariscos</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="aguachiles">Aguachiles</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="parrilladas">Parrilladas</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="mixtos">Mixtos</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="tacos-y-tostadas">Tacos y Carnes</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="bebidas">Bebidas</span
+            >
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#79B743] transition-all duration-300 cursor-pointer"
+                data-section="cocteleria">Coctelería</span
+            >
+        </div>
+
+        <div data-category="entradas" class="menu-section">
+            <SectionTitle title="Entradas" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard
+                    name="Queso fundido"
+                    comment="Delicioso queso flameado con sirloin para abrir el apetito"
+                    price="$140"
+                    class="delay-[0ms]"
+                />
+                <MenuCard
+                    name="Papas rancheras"
+                    comment="Papas de galeana adobadas con mantequilla y chile seco (350g)"
+                    price="$80"
+                    class="delay-[100ms]"
+                />
+                <MenuCard
+                    name="Guacamole con flautas de camarón"
+                    comment="Guacamole con flautas doradas de camarón (250 g)."
+                    price="$110"
+                    class="delay-[150ms]"
+                />
+                <MenuCard
+                    name="Guacamole con carnitas"
+                    comment="Guacamole con carnitas de cerdo 250g"
+                    price="$150"
+                    class="delay-[300ms]"
+                />
+                <MenuCard
+                    name="Guacamole con costillas tajín"
+                    comment="Guacamole con costillas al tajín 250g"
+                    price="$165"
+                />
+                <MenuCard
+                    name="Guacamole con pico de gallo"
+                    comment="Delicioso queso flameado con sirloin para abrir el apetito"
+                    price="$120"
+                />
+                <MenuCard
+                    name="Quesadillas"
+                    comment="Delicioso queso flameado con sirloin para abrir el apetito"
+                    price="$80"
+                />
+                <MenuCard
+                    name="Papas a la francesa"
+                    comment="asd"
+                    price="$90"
+                />
+            </div>
+        </div>
+
+        <div data-category="mariscos" class="menu-section">
+            <SectionTitle title="Mariscos y Camarones" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard
+                    name="Ceviche de camarón"
+                    comment="Delicioso queso flameado con sirloin para abrir el apetito"
+                    price="$200"
+                />
+                <MenuCard
+                    name="Tostadas de camarón"
+                    comment="Tostada de camarón con salsa de la casa"
+                    price="$90 c/u"
+                />
+                <MenuCard
+                    name="Brochetas de camarón"
+                    comment="Brochetas al grill con verduras y aderezo (4pzas)"
+                    price="$180"
+                />
+                <MenuCard
+                    name="Camarones al chile seco"
+                    comment="asd"
+                    price="$200"
+                />
+                <MenuCard
+                    name="Camarones al mojo de ajo"
+                    comment=""
+                    price="$200"
+                />
+                <MenuCard
+                    name="Camarones a la mantequilla"
+                    comment=""
+                    price="$200"
+                />
+                <MenuCard name="Camarones cremosos" comment="" price="$200" />
+                <MenuCard name="Camarones al serrano" comment="" price="$200" />
+                <MenuCard
+                    name="Coctel de camarón chico"
+                    comment=""
+                    price="$170"
+                />
+                <MenuCard
+                    name="Coctel de camarón grande"
+                    comment=""
+                    price="$220"
+                />
+                <MenuCard
+                    name="Coctel de camarón grande"
+                    comment=""
+                    price="$220"
+                />
+                <MenuCard name="Ceviche de pescado" comment="" price="$180" />
+                <MenuCard name="Tostada de pescado" comment="" price="$80" />
+                <MenuCard
+                    name="Filete de pescado empanizado"
+                    comment=""
+                    price="$150"
+                />
+                <MenuCard
+                    name="Chicharrón de Pescado"
+                    comment=""
+                    price="$160"
+                />
+                <MenuCard name="Mojarra frita" comment="" price="$150" />
+                <MenuCard name="Pescado Zarandeado" comment="" price="$150" />
+            </div>
+        </div>
+
+        <div data-category="aguachiles" class="menu-section">
+            <SectionTitle title="Aguachiles" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard name="Aguachile Verde" comment="" price="$200" />
+                <MenuCard name="Aguachile Rojo" comment="" price="$200" />
+                <MenuCard name="Aguachile Negro" comment="" price="$200" />
+                <MenuCard
+                    name="Aguachile 4 Carabelas"
+                    comment=""
+                    price="$200"
+                />
+                <MenuCard
+                    name="Aguachile Mango Habanero"
+                    comment=""
+                    price="$200"
+                />
+            </div>
+        </div>
+
+        <div data-category="parrilladas" class="menu-section">
+            <SectionTitle title="Parrilladas" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard
+                    name="Parrillada de Diezmillo"
+                    comment=""
+                    price="$300"
+                />
+                <MenuCard
+                    name="Parrillada de Arrachera"
+                    comment=""
+                    price="$320"
+                />
+                <MenuCard
+                    name="Parrillada de Sirloin"
+                    comment=""
+                    price="$440"
+                />
+                <MenuCard name="Parrillada de Mixta" comment="" price="$400" />
+                <MenuCard name="Parrillada de Pulpo" comment="" price="$500" />
+                <MenuCard
+                    name="Parrillada Mixta - Mariscos"
+                    comment=""
+                    price="$500"
+                />
+                <MenuCard name="Corte de Ribeye" comment="" price="$480" />
+            </div>
+        </div>
+
+        <div data-category="mixtos" class="menu-section">
+            <SectionTitle title="Mixtos" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard name="Ceviche Mixto" comment="" price="$180" />
+                <MenuCard name="Tostada mixta" comment="" price="$80 c/u" />
+                <MenuCard
+                    name="Molcajete Mar y Tierra"
+                    comment=""
+                    price="$400"
+                    image="src/assets/webp/Molcajete Mar y Tierre.JPEG.webp"
+                />
+            </div>
+        </div>
+
+        <div data-category="tacos-y-tostadas" class="menu-section">
+            <SectionTitle title="Tacos y Tostadas" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard
+                    name="Taco de Sirloin"
+                    comment=""
+                    price="$57 c/u"
+                    image="src/assets/webp/Tacos de carne asada.JPEG.webp"
+                />
+                <MenuCard name="Taco de Arrachera" comment="" price="$60 c/u" />
+                <MenuCard name="Taco de Diezmillo" comment="" price="$57 c/u" />
+                <MenuCard name="Taco Gobernador" comment="" price="$60 c/u" />
+                <MenuCard
+                    name="Tostada de carne asada"
+                    comment=""
+                    price="$70 c/u"
+                />
+                <MenuCard
+                    name="Brochetas de carne asada"
+                    comment=""
+                    price="$180"
+                />
+            </div>
+        </div>
+
+        <div data-category="bebidas" class="menu-section">
+            <SectionTitle title="Bebidas" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard name="Refresco de 355ml" comment="" price="$40" />
+                <MenuCard name="Cerveza de media" comment="" price="$40" />
+                <MenuCard
+                    name="Agua Fresca Natural de Sabores"
+                    comment=""
+                    price="$40"
+                />
+                <MenuCard name="Limonada Mineral" comment="" price="$60" />
+                <MenuCard
+                    name="La Brava de Traspatio"
+                    comment=""
+                    price="$180"
+                />
+                <MenuCard
+                    name="Cubeta de Cervezas (10)"
+                    comment=""
+                    price="$350"
+                />
+            </div>
+        </div>
+
+        <div data-category="cocteleria" class="menu-section">
+            <SectionTitle title="Mixiología" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <MenuCard name="Mezcalita" comment="" price="$140" />
+                <MenuCard name="Piña Colada" comment="" price="$130" />
+                <MenuCard name="Pantera Rosa" comment="" price="$130" />
+                <MenuCard name="Vampiro" comment="" price="$130" />
+                <MenuCard name="Paloma" comment="" price="$130" />
+                <MenuCard name="Margarita" comment="" price="$130" />
+                <MenuCard name="Perla Negra" comment="" price="$130" />
+                <MenuCard name="Desarmador" comment="" price="$130" />
+                <MenuCard name="Tequila Sunrise" comment="" price="$140" />
+            </div>
+        </div>
+
+        <!--  Script simple para cambiar secciones -->
+        <script>
+            const tabs = document.querySelectorAll(".tab-item");
+            const sections = document.querySelectorAll(".menu-section");
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    // Quitar clase activa a todos
+                    tabs.forEach((t) =>
+                        t.classList.remove(
+                            "text-[#79B743]",
+                            "border-[#79B743]",
+                            "active",
+                        ),
+                    );
+                    // Agregar clase activa al actual
+                    tab.classList.add(
+                        "text-[#79B743]",
+                        "border-[#79B743]",
+                        "active",
+                    );
+
+                    // @ts-ignore
+                    const selected = tab.dataset.section;
+
+                    sections.forEach((section) => {
+                        if (
+                            selected === "todo" ||
+                            // @ts-ignore
+                            section.dataset.category === selected
+                        ) {
+                            section.classList.remove("hidden", "opacity-0");
+                            section.classList.add("opacity-100");
+                        } else {
+                            section.classList.add("hidden", "opacity-0");
+                            section.classList.remove("opacity-100");
+                        }
+                    });
+                });
+            });
+        </script>
+    </section>
+</BaseLayout>

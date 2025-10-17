@@ -1,0 +1,36 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+const { title = "Traspatio Mar & Grill", description = "Menú digital" } =
+    Astro.props;
+---
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body class="relative min-h-screen flex flex-col font-sans text-stone-100">
+        <!-- 🌆 Imagen de fondo y degradado -->
+        <div
+            class="fixed inset-0 -z-10 bg-[url('/src/assets/bckg2.JPEG')] bg-cover bg-center bg-fixed before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/100 before:via-black/80 before:to-black/50"
+        >
+        </div>
+
+        <!-- 🔸 Navbar ahora transparente -->
+        <Navbar />
+
+        <main class="pt-20 flex-1">
+            <slot />
+        </main>
+
+        <Footer />
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "menuapp",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "convert-webp": "node convert-webp.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "astro": "^5.14.5",
+    "sharp": "^0.34.4",
+    "tailwindcss": "^4.1.14"
+  }
+}

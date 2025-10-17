@@ -1,0 +1,28 @@
+---
+const { name, promo, price, comment, image } = Astro.props;
+---
+
+<div
+    class="bg-transparent shadow-md rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-[1.02] p-4 flex items-center gap-4 animate-fadeInUp"
+>
+    {
+        image && (
+            <img
+                src={image}
+                alt={name}
+                class="w-20 h-20 rounded-full object-cover shadow-md flex-shrink-0 transition-transform duration-300 hover:scale-110"
+                loading="lazy"
+            />
+        )
+    }
+    <div class="p-4">
+        <h3
+            class="text-lg font-bold text-amber-400 hover:text-amber-600 transition-all duration-300 cursor-pointer"
+        >
+            {name}
+        </h3>
+        {promo && <p class="text-amber-700 font-medium mt-1">{promo}</p>}
+        {price && <p class="text-[#FFFFF] font-bold mt-1">{price}</p>}
+        {comment && <p class="text-sm text-[#FFFFF] mt-1">{comment}</p>}
+    </div>
+</div>
