@@ -1,0 +1,83 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+---
+
+<BaseLayout title="Contacto | Traspatio Mar & Grill">
+    <section
+        class="max-w-6xl mx-auto px-6 pt-32 pb-20 text-center text-stone-100"
+    >
+        <h1 class="text-4xl md:text-5xl font-bold text-[#79B743] mb-4">
+            Contáctanos
+        </h1>
+        <p class="text-stone-300 text-lg italic mb-12">
+            Estamos listos para atenderte como en casa.
+        </p>
+
+        <div
+            class="grid md:grid-cols-2 gap-10 items-center bg-black/40 backdrop-blur-md rounded-2xl p-8"
+        >
+            <!-- 🗺️ Mapa + info -->
+            <div class="flex flex-col items-center md:items-start text-left">
+                <iframe
+                    src="https://www.google.com/maps?q=Carlos+Salazar+1408,+Centro,+Monterrey,+N.L.&output=embed"
+                    class="w-full h-64 rounded-xl shadow-lg mb-6"
+                    loading="lazy"></iframe>
+                <h3 class="text-2xl font-semibold text-[#79B743] mb-2">
+                    Nuestra ubicación
+                </h3>
+                <p class="text-stone-300 text-sm leading-relaxed">
+                    Carlos Salazar #1408, esquina con Álvaro Obregón<br />
+                    Centro de Monterrey, N.L.
+                </p>
+                <p class="text-stone-400 mt-3">
+                    <span class="font-medium text-[#79B743]">Teléfono:</span>
+                    +52 81 1552 2724
+                </p>
+                <p class="text-stone-400">
+                    <span class="font-medium text-[#79B743]">Email:</span>
+                    eltraspatiomarygrill@gmail.com
+                </p>
+            </div>
+
+            <!-- 📨 Formulario -->
+            <div class="text-left">
+                <h3 class="text-2xl font-semibold text-[#79B743] mb-4">
+                    Envíanos un mensaje
+                </h3>
+                <form
+                    action="https://formsubmit.co/cesenasdaniel8@gmail.com"
+                    method="POST"
+                    class="flex flex-col gap-4"
+                >
+                    <input
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="Tu nombre"
+                        class="bg-white/10 text-stone-100 placeholder-stone-400 rounded-lg p-3 border border-white/10 focus:outline-none focus:border-[#79B743] transition"
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="Tu correo"
+                        class="bg-white/10 text-stone-100 placeholder-stone-400 rounded-lg p-3 border border-white/10 focus:outline-none focus:border-[#79B743] transition"
+                    />
+                    <textarea
+                        name="message"
+                        rows="4"
+                        placeholder="Tu mensaje..."
+                        class="bg-white/10 text-stone-100 placeholder-stone-400 rounded-lg p-3 border border-white/10 focus:outline-none focus:border-[#79B743] transition"
+                    ></textarea>
+                    <button
+                        type="submit"
+                        class="bg-[#79B743] hover:bg-[#6aa63a] text-white font-medium py-3 px-6 rounded-lg transition"
+                    >
+                        Enviar mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</BaseLayout>

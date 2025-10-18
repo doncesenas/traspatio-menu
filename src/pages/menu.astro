@@ -7,6 +7,11 @@ import MenuCard from "../components/MenuCard.astro";
 
 <BaseLayout title="Menú | Traspatio Mar & Grill">
     <section class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+        <img
+            src="/logo.jpg"
+            alt="Logo Traspatio Mar & Grill"
+            class="w-32 h-32 mx-auto rounded-full object-cover shadow-md mb-6"
+        />
         <h1 class="text-4xl font-bold text-center text-[#79B743] mb-10">
             Nuestro Menú
         </h1>
@@ -61,45 +66,61 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Queso fundido"
                     comment="Delicioso queso flameado con sirloin para abrir el apetito"
                     price="$140"
-                    class="delay-[0ms]"
+                    image="src/assets/webp/Queso Flameado.JPEG"
                 />
                 <MenuCard
                     name="Papas rancheras"
                     comment="Papas de galeana adobadas con mantequilla y chile seco (350g)"
                     price="$80"
-                    class="delay-[100ms]"
+                    image="src/assets/webp/papasrancheras.JPEG"
                 />
                 <MenuCard
                     name="Guacamole con flautas de camarón"
                     comment="Guacamole con flautas doradas de camarón (250 g)."
                     price="$110"
-                    class="delay-[150ms]"
+                    image="src/assets/webp/flautasconguacamole.PNG"
                 />
                 <MenuCard
                     name="Guacamole con carnitas"
                     comment="Guacamole con carnitas de cerdo 250g"
                     price="$150"
-                    class="delay-[300ms]"
+                    image="src/assets/webp/guacamolecarnitas.JPEG"
                 />
                 <MenuCard
                     name="Guacamole con costillas tajín"
                     comment="Guacamole con costillas al tajín 250g"
                     price="$165"
+                    image="src/assets/webp/costillas"
                 />
                 <MenuCard
                     name="Guacamole con pico de gallo"
                     comment="Delicioso queso flameado con sirloin para abrir el apetito"
                     price="$120"
+                    image="src/assets/webp/guacamolepicodegallo.JPEG"
                 />
                 <MenuCard
                     name="Quesadillas"
                     comment="Delicioso queso flameado con sirloin para abrir el apetito"
                     price="$80"
+                    image="src/assets/webp/Quesadillas.JPEG"
                 />
                 <MenuCard
                     name="Papas a la francesa"
                     comment="asd"
                     price="$90"
+                    image="src/assets/webp/papasfrancesa.JPEG"
+                />
+                <MenuCard
+                    name="Nachos tradicionales"
+                    comment="Delicioso queso flameado con  para abrir el apetito"
+                    price="$90"
+                    image="src/assets/webp/nachos"
+                />
+                <MenuCard
+                    name="Nachos con Sirloin"
+                    comment="Delicioso queso flameado con sirloin para abrir el apetito"
+                    price="$160"
+                    image="src/assets/webp/nachosconsirloin.JPEG"
                 />
             </div>
         </div>
@@ -111,21 +132,25 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Ceviche de camarón"
                     comment="Delicioso queso flameado con sirloin para abrir el apetito"
                     price="$200"
+                    image="src/assets/webp/camarones"
                 />
                 <MenuCard
                     name="Tostadas de camarón"
                     comment="Tostada de camarón con salsa de la casa"
                     price="$90 c/u"
+                    image="src/assets/webp/tostadacamaron.JPEG"
                 />
                 <MenuCard
                     name="Brochetas de camarón"
                     comment="Brochetas al grill con verduras y aderezo (4pzas)"
                     price="$180"
+                    image="src/assets/webp/"
                 />
                 <MenuCard
                     name="Camarones al chile seco"
                     comment="asd"
                     price="$200"
+                    image="src/assets/webp/camaroneschileseco.JPEG"
                 />
                 <MenuCard
                     name="Camarones al mojo de ajo"
@@ -136,6 +161,7 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Camarones a la mantequilla"
                     comment=""
                     price="$200"
+                    image="src/assets/webp/"
                 />
                 <MenuCard name="Camarones cremosos" comment="" price="$200" />
                 <MenuCard name="Camarones al serrano" comment="" price="$200" />
@@ -149,24 +175,31 @@ import MenuCard from "../components/MenuCard.astro";
                     comment=""
                     price="$220"
                 />
-                <MenuCard
-                    name="Coctel de camarón grande"
-                    comment=""
-                    price="$220"
-                />
                 <MenuCard name="Ceviche de pescado" comment="" price="$180" />
-                <MenuCard name="Tostada de pescado" comment="" price="$80" />
+                <MenuCard
+                    name="Tostada de pescado"
+                    comment=""
+                    price="$80"
+                    image="src/assets/webp/tostadapescado.JPEG"
+                />
                 <MenuCard
                     name="Filete de pescado empanizado"
                     comment=""
                     price="$150"
+                    image="src/assets/webp/filetepescado.JPEG"
                 />
                 <MenuCard
                     name="Chicharrón de Pescado"
                     comment=""
                     price="$160"
+                    image="src/assets/webp/chicharronpescado.JPEG"
                 />
-                <MenuCard name="Mojarra frita" comment="" price="$150" />
+                <MenuCard
+                    name="Mojarra frita"
+                    comment=""
+                    price="$150"
+                    image="src/assets/webp/mojarrafrita.JPEG"
+                />
                 <MenuCard name="Pescado Zarandeado" comment="" price="$150" />
             </div>
         </div>
@@ -174,9 +207,19 @@ import MenuCard from "../components/MenuCard.astro";
         <div data-category="aguachiles" class="menu-section">
             <SectionTitle title="Aguachiles" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <MenuCard name="Aguachile Verde" comment="" price="$200" />
+                <MenuCard
+                    name="Aguachile Verde"
+                    comment=""
+                    price="$200"
+                    image="src/assets/webp/aguachileverde.JPEG"
+                />
                 <MenuCard name="Aguachile Rojo" comment="" price="$200" />
-                <MenuCard name="Aguachile Negro" comment="" price="$200" />
+                <MenuCard
+                    name="Aguachile Negro"
+                    comment=""
+                    price="$200"
+                    image="src/assets/webp/aguachilenegro.jpg"
+                />
                 <MenuCard
                     name="Aguachile 4 Carabelas"
                     comment=""
@@ -186,6 +229,13 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Aguachile Mango Habanero"
                     comment=""
                     price="$200"
+                />
+
+                <MenuCard
+                    name="Aguachile Traspatio"
+                    comment=""
+                    price="$200"
+                    image="src/assets/webp/aguachiletraspatio.JPEG"
                 />
             </div>
         </div>
@@ -202,18 +252,27 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Parrillada de Arrachera"
                     comment=""
                     price="$320"
+                    image="src/assets/webp/parrilladarrachera.JPEG"
                 />
                 <MenuCard
                     name="Parrillada de Sirloin"
                     comment=""
                     price="$440"
+                    image="src/assets/webp/parrilladarrachera.JPEG"
                 />
                 <MenuCard name="Parrillada de Mixta" comment="" price="$400" />
-                <MenuCard name="Parrillada de Pulpo" comment="" price="$500" />
+
+                <MenuCard
+                    name="Parrillada de Pulpo"
+                    comment=""
+                    price="$500"
+                    image="src/assets/webp/parrilladapulpo.png"
+                />
                 <MenuCard
                     name="Parrillada Mixta - Mariscos"
                     comment=""
                     price="$500"
+                    image="src/assets/webp/parrilladamixta.JPEG"
                 />
                 <MenuCard name="Corte de Ribeye" comment="" price="$480" />
             </div>
@@ -228,7 +287,7 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Molcajete Mar y Tierra"
                     comment=""
                     price="$400"
-                    image="src/assets/webp/Molcajete Mar y Tierre.JPEG.webp"
+                    image="src/assets/webp/molcajetemarytierra.JPEG"
                 />
             </div>
         </div>
@@ -240,20 +299,37 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Taco de Sirloin"
                     comment=""
                     price="$57 c/u"
-                    image="src/assets/webp/Tacos de carne asada.JPEG.webp"
+                    image="src/assets/webp/tacodiezmillo.JPEG"
                 />
-                <MenuCard name="Taco de Arrachera" comment="" price="$60 c/u" />
-                <MenuCard name="Taco de Diezmillo" comment="" price="$57 c/u" />
-                <MenuCard name="Taco Gobernador" comment="" price="$60 c/u" />
+                <MenuCard
+                    name="Taco de Arrachera"
+                    comment=""
+                    price="$60 c/u"
+                    image="src/assets/webp/tacoarrachera.JPEG"
+                />
+                <MenuCard
+                    name="Taco de Diezmillo"
+                    comment=""
+                    price="$57 c/u"
+                    image="src/assets/webp/tacodiezmillo.JPEG"
+                />
+                <MenuCard
+                    name="Taco Gobernador"
+                    comment=""
+                    price="$60 c/u"
+                    image="src/assets/webp/tacogober.JPEG"
+                />
                 <MenuCard
                     name="Tostada de carne asada"
                     comment=""
                     price="$70 c/u"
+                    image="src/assets/webp/tostadacamaron.JPEG"
                 />
                 <MenuCard
                     name="Brochetas de carne asada"
                     comment=""
                     price="$180"
+                    image="src/assets/webp/BROCHETAS DE CARNE.JPEG"
                 />
             </div>
         </div>
@@ -285,7 +361,12 @@ import MenuCard from "../components/MenuCard.astro";
         <div data-category="cocteleria" class="menu-section">
             <SectionTitle title="Mixiología" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <MenuCard name="Mezcalita" comment="" price="$140" />
+                <MenuCard
+                    name="Mezcalita"
+                    comment=""
+                    price="$140"
+                    image="src/assets/webp/mezcalitas.JPEG"
+                />
                 <MenuCard name="Piña Colada" comment="" price="$130" />
                 <MenuCard name="Pantera Rosa" comment="" price="$130" />
                 <MenuCard name="Vampiro" comment="" price="$130" />
