@@ -54,3 +54,27 @@
 :root {
     padding-bottom: env(safe-area-inset-bottom);
 }
+
+/* global.css */
+
+/* ... (tus estilos existentes) ... */
+
+/* * CORRECCIÓN PARA IOS SAFARI (Reemplaza 100vh con 100dvh)
+ * Esto sobreescribe la funcionalidad de la clase min-h-screen de Tailwind
+ * cuando se usa en el <body>.
+ */
+@supports (min-height: 100dvh) {
+
+    body,
+    html,
+    #root,
+    .min-h-screen {
+        /* Usa la unidad dinámica del viewport, que se ajusta a las barras de Safari */
+        min-height: 100dvh;
+    }
+}
+
+/* Fallback para navegadores antiguos que no soportan dvh */
+.min-h-screen {
+    min-height: 100vh;
+}
