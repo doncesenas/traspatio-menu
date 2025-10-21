@@ -54,3 +54,15 @@
 :root {
     padding-bottom: env(safe-area-inset-bottom);
 }
+
+main::after {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: env(safe-area-inset-bottom);
+    background: rgba(255, 0, 0, 0.3);
+    pointer-events: none;
+    z-index: 9999;
+}
