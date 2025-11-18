@@ -2,8 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const inputDir = './public/images';   // 📁 Carpeta donde están tus imágenes
-const outputDir = './src/assets/webp'; // 📁 Carpeta de salida (puedes cambiarla)
+const inputDir = './public';   // 📁 Carpeta donde están tus imágenes
+const outputDir = './public'; // 📁 Carpeta de salida (puedes cambiarla)
 
 fs.mkdirSync(outputDir, { recursive: true });
 
