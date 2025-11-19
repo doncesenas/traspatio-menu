@@ -79,9 +79,9 @@ import MenuCard from "../components/MenuCard.astro";
             minimo de 20 minutos.
         </div>
 
-        <div data-category="entradas" class="menu-section smoke-reveal">
+        <div data-category="entradas" class="menu-section">
             <SectionTitle title="Entradas" />
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Papas Rancheras"
                     comment="Papas Galeanas confitadas en chile secos"
@@ -143,9 +143,9 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="palcentro" class="menu-section smoke-reveal">
+        <div data-category="palcentro" class="menu-section">
             <SectionTitle title="Pal Centro" />
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Chicharrón de RibEye"
                     comment="Platillo preparado con sazón norteña y calidad de la casa."
@@ -173,9 +173,9 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="parrillero" class="menu-section smoke-reveal">
+        <div data-category="parrillero" class="menu-section">
             <SectionTitle title="Parrillero" />
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Corte de Ribeye"
                     comment="Platillo preparado con sazón norteña y calidad de la casa."
@@ -228,10 +228,10 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="mariscos" class="menu-section smoke-reveal">
+        <div data-category="mariscos" class="menu-section">
             <SectionTitle title="Aguachiles" />
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Aguachile Negro"
                     comment="Platillo preparado con sazón norteña y calidad de la casa."
@@ -260,7 +260,7 @@ import MenuCard from "../components/MenuCard.astro";
 
             <SectionTitle title="Camarones" />
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Camarones al gusto"
                     comment="Platillo preparado con sazón norteña y calidad de la casa."
@@ -297,7 +297,7 @@ import MenuCard from "../components/MenuCard.astro";
 
             <SectionTitle title="Pescado" />
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Filete de Pescado Empanizado"
                     comment="Con papas a la francesa."
@@ -319,697 +319,588 @@ import MenuCard from "../components/MenuCard.astro";
 
         <div data-category="tacos" class="menu-section smoke-reveal">
             <SectionTitle title="Tacos" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Tacos de Ribeye"
+                    comment="Taco preparado con sazón norteña."
+                    price="$200"
+                    image="/images/tacos-ribeye.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tacos de Ribeye"
-                comment="Taco preparado con sazón norteña."
-                price="$200"
-                image="/images/tacos-ribeye.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tacos de Ensenada de Camarón"
+                    comment="3pz, camaron capeado, ensalada de col, chipotle y aguacate"
+                    price="$150"
+                    image="/images/tacos-encenada.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tacos de Ensenada de Camarón"
-                comment="3pz, camaron capeado, ensalada de col, chipotle y aguacate"
-                price="$150"
-                image="/images/tacos-encenada.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tacos de Ensenada de Pescado"
+                    comment="3pz, filete capeado, ensalada de col, chipotle y aguacate"
+                    price="$150"
+                    image="/images/tacos-encenada.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tacos de Ensenada de Pescado"
-                comment="3pz, filete capeado, ensalada de col, chipotle y aguacate"
-                price="$150"
-                image="/images/tacos-encenada.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tacos de Sirloin"
+                    comment="250 grs."
+                    price="$180"
+                    image="/images/tacos-ribeye.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tacos de Sirloin"
-                comment="250 grs."
-                price="$180"
-                image="/images/tacos-ribeye.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tacos de Arrachera"
+                    comment="250 grs."
+                    price="$190"
+                    image="/images/tacos-ribeye.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tacos de Arrachera"
-                comment="250 grs."
-                price="$190"
-                image="/images/tacos-ribeye.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Tacos Gobernador"
-                comment="3 piezas."
-                price="$180"
-                image="/images/tacos-gobernador.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tacos Gobernador"
+                    comment="3 piezas."
+                    price="$180"
+                    image="/images/tacos-gobernador.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
         </div>
 
-        <div data-category="botanero" class="menu-section smoke-reveal">
+        <div data-category="botanero" class="menu-section">
             <SectionTitle title="Botanero" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Hamburguesa Doble"
+                    comment="Platillo preparado con sazón norteña y calidad de la casa."
+                    price="$210"
+                    image="/images/hamburgesa-doble.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Hamburguesa Doble"
-                comment="Platillo preparado con sazón norteña y calidad de la casa."
-                price="$210"
-                image="/images/hamburgesa-doble.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Hamburguesa de Camarón"
+                    comment="Platillo preparado con sazón norteña y calidad de la casa."
+                    price="$240"
+                    image="/images/h-camaron.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Hamburguesa de Camarón"
-                comment="Platillo preparado con sazón norteña y calidad de la casa."
-                price="$240"
-                image="/images/h-camaron.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Cheese burger"
+                    comment="Platillo preparado con sazón norteña y calidad de la casa."
+                    price="$190"
+                    image="/images/cheeseburger.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Cheese burger"
-                comment="Platillo preparado con sazón norteña y calidad de la casa."
-                price="$190"
-                image="/images/cheeseburger.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Buffalo sandwich"
+                    comment="(150 gr de pollo bañado en salsa buffalo, lechuga, tomate , queso americano y aderezo ranch, 150 gr de papas fritas)"
+                    price="$160"
+                    image="/images/buffalo.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Buffalo sandwich"
-                comment="(150 gr de pollo bañado en salsa buffalo, lechuga, tomate , queso americano y aderezo ranch, 150 gr de papas fritas)"
-                price="$160"
-                image="/images/buffalo.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Boneless súper crunchy"
+                    comment="Habanero, Ranch, BBQ,  Búfalo"
+                    price="$180"
+                    image="/images/crunchy.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Boneless súper crunchy"
-                comment="Habanero, Ranch, BBQ,  Búfalo"
-                price="$180"
-                image="/images/crunchy.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Orden de alitas"
+                    comment="(500 gr de alitas de pollo, al Tajín, buffalo, mango habanero o bbq, 150 gr de papas)"
+                    price="$200"
+                    image="/images/alitas.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Orden de alitas"
-                comment="(500 gr de alitas de pollo, al Tajín, buffalo, mango habanero o bbq, 150 gr de papas)"
-                price="$200"
-                image="/images/alitas.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Nachos con Sirloin"
+                    comment="Queso fundido al estilo del norte con sirloin."
+                    price="$180"
+                    image="/images/nachossirloin.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Nachos con Sirloin"
-                comment="Queso fundido al estilo del norte con sirloin."
-                price="$180"
-                image="/images/nachossirloin.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Nachos con queso"
-                comment="Queso fundido al estilo del norte, derretido y con gran sabor."
-                price="$130"
-                image="/images/nachosqueso.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Nachos con queso"
+                    comment="Queso fundido al estilo del norte, derretido y con gran sabor."
+                    price="$130"
+                    image="/images/nachosqueso.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
         </div>
 
-        <div data-category="delacasa" class="menu-section smoke-reveal">
+        <div data-category="delacasa" class="menu-section">
             <SectionTitle title="De La Casa" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Tostada de carne asada"
+                    comment="Carne sazonada al estilo del norte, jugosa y bien servida."
+                    price="$140"
+                    image="/images/tostadasCarne.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tostada de carne asada"
-                comment="Carne sazonada al estilo del norte, jugosa y bien servida."
-                price="$140"
-                image="/images/tostadasCarne.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tostadas de ceviche de camarón"
+                    comment="Camaron sazonado al estilo del norte, jugosa y bien servida."
+                    price="$95"
+                    image="/images/tostadaCamaron.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tostadas de ceviche de camarón"
-                comment="Camaron sazonado al estilo del norte, jugosa y bien servida."
-                price="$95"
-                image="/images/tostadaCamaron.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tostadas de ceviche de pescado"
+                    comment="Delicioso Ceviche servido en tostada de la casa."
+                    price="$85"
+                    image="/images/tostadaPescado.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tostadas de ceviche de pescado"
-                comment="Delicioso Ceviche servido en tostada de la casa."
-                price="$85"
-                image="/images/tostadaPescado.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Tostadas de ceviche de Mixto"
-                comment="Camarón y Pescado en un mix servido en tostada"
-                price="$95"
-                image="/images/tostadamixta.webp"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tostadas de ceviche de Mixto"
+                    comment="Camarón y Pescado en un mix servido en tostada"
+                    price="$95"
+                    image="/images/tostadamixta.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
         </div>
 
-        <div data-category="postres" class="menu-section smoke-reveal">
+        <div data-category="postres" class="menu-section">
             <SectionTitle title="Postres" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+            </div>
         </div>
 
-        <div data-category="refrescos" class="menu-section smoke-reveal">
+        <div data-category="refrescos" class="menu-section">
             <SectionTitle title="Refrescos" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Coca Cola Regular"
+                    comment="355ml"
+                    price="$30"
+                    image="/images/cocacola.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Coca Cola Light"
+                    comment="355ml"
+                    price="$30"
+                    image="/images/cocacola-light.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Topo Chico"
+                    comment="Agua Mineral"
+                    price="$50"
+                    image="/images/topochico.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Coca Cola Regular"
-                comment="355ml"
-                price="$30"
-                image="/images/cocacola.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Coca Cola Light"
-                comment="355ml"
-                price="$30"
-                image="/images/cocacola-light.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Topo Chico"
-                comment="Agua Mineral"
-                price="$50"
-                image="/images/topochico.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Boost"
-                comment="Bebida energetizante"
-                price="$55"
-                image="/images/boost.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Limonada Natural"
-                comment=""
-                price="$40"
-                image="/images/limonada-natural.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Limonada Mineral"
-                comment=""
-                price="$60"
-                image="/images/limonada-mineral.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Botella de Agua"
-                comment=""
-                price="$25"
-                image="/images/botella-agua.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Boost"
+                    comment="Bebida energetizante"
+                    price="$55"
+                    image="/images/boost.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Limonada Natural"
+                    comment=""
+                    price="$40"
+                    image="/images/limonada-natural.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Limonada Mineral"
+                    comment=""
+                    price="$60"
+                    image="/images/limonada-mineral.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Botella de Agua"
+                    comment=""
+                    price="$25"
+                    image="/images/botella-agua.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
         </div>
 
         <div data-category="bar" class="menu-section smoke-reveal">
             <SectionTitle title="Cervezas" />
-            <MenuCard
-                name="Tecate Light"
-                comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
-                price=""
-                image="/images/tecatelight.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Indio"
-                comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
-                price=""
-                image="/images/cervezaindio.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Carta Blanca"
-                comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
-                price=""
-                image="/images/cartablanca.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Corona Extra"
-                comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
-                price=""
-                image="/images/corona-extra.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Modelo Especial"
-                comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
-                price=""
-                image="/images/modelo-especial.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Michelob Ultra"
-                comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
-                price=""
-                image="/images/michelob-ultra.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Tecate Light"
+                    comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
+                    price=""
+                    image="/images/tecatelight.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Indio"
+                    comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
+                    price=""
+                    image="/images/cervezaindio.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Carta Blanca"
+                    comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
+                    price=""
+                    image="/images/cartablanca.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Corona Extra"
+                    comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
+                    price=""
+                    image="/images/corona-extra.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Modelo Especial"
+                    comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
+                    price=""
+                    image="/images/modelo-especial.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Michelob Ultra"
+                    comment="Precio lunes a jueves todo el dia. - $40 Precio Viernes y Sabado despues de las 19:00 hrs. - $45"
+                    price=""
+                    image="/images/michelob-ultra.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
+
             <SectionTitle title="Tarros" />
-            <MenuCard
-                name="Chelado"
-                comment=""
-                price="$25"
-                image="/images/tarro-chelado.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Michelado"
-                comment="$35"
-                price=""
-                image="/images/tarro-chelado.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Clamato"
-                comment="$60"
-                price=""
-                image="/images/tarro-clamato.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Chelado"
+                    comment=""
+                    price="$25"
+                    image="/images/tarro-chelado.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Michelado"
+                    comment="$35"
+                    price=""
+                    image="/images/tarro-chelado.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Clamato"
+                    comment="$60"
+                    price=""
+                    image="/images/tarro-clamato.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
+
             <SectionTitle title="Cubetazos" />
-            <MenuCard
-                name="Cubetita (5 medias)"
-                comment="A elegir"
-                price="$200"
-                image="/images/cubetazotecate.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Cubetazo (10 Cervezas)"
-                comment="A elegir"
-                price="$400"
-                image="/images/cubetazo.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Cubetita (5 medias)"
+                    comment="A elegir"
+                    price="$200"
+                    image="/images/cubetazotecate.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Cubetazo (10 Cervezas)"
+                    comment="A elegir"
+                    price="$400"
+                    image="/images/cubetazo.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
+
             <SectionTitle title="Whisky" />
-            <MenuCard
-                name="Etiqueta negra"
-                comment="Shoot 1/2 oz"
-                price="$150"
-                image="/images/whisky.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Chivas 12"
-                comment="Shoot 1/2 oz"
-                price="$150"
-                image="/images/whisky.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Buchanans"
-                comment="Shoot 1/2 oz"
-                price="$150"
-                image="/images/whisky.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Etiqueta negra"
+                    comment="Shoot 1/2 oz"
+                    price="$150"
+                    image="/images/whisky.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Chivas 12"
+                    comment="Shoot 1/2 oz"
+                    price="$150"
+                    image="/images/whisky.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Buchanans"
+                    comment="Shoot 1/2 oz"
+                    price="$150"
+                    image="/images/whisky.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
+
             <SectionTitle title="Mezcal" />
-            <MenuCard
-                name="Mezcal 400 conejos"
-                comment="Shoot 1/2 oz"
-                price="$130"
-                image="/images/mezcal.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Mezcalita"
-                comment="Shoot"
-                price="$140"
-                image="/images/mezcal.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Mezcal 400 conejos"
+                    comment="Shoot 1/2 oz"
+                    price="$130"
+                    image="/images/mezcal.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Mezcalita"
+                    comment="Shoot"
+                    price="$140"
+                    image="/images/mezcal.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
+
             <SectionTitle title="Botellas" />
-            <MenuCard
-                name="Etiqueta Negra"
-                comment="750ml (incluye 4 servicios)"
-                price="$1800"
-                image="/images/botellas-etiqueta-negra.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Buchanans"
-                comment="750ml (incluye 4 servicios)"
-                price="$1800"
-                image="/images/buchanans.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Maestro Tequilero"
-                comment="750ml (incluye 4 servicios)"
-                price="$1800"
-                image="/images/maestro-dobel.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Don Julio 70"
-                comment="750ml (incluye 4 servicios)"
-                price="$1800"
-                image="/images/don-julio.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Tradicional Reposado"
-                comment="695ml (incluye 4 servicios)"
-                price="$1300"
-                image="/images/tradicional.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="José Cuervo Plata"
-                comment="695ml (incluye 4 servicios)"
-                price="$1300"
-                image="/images/cuervoplata.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Etiqueta Negra"
+                    comment="750ml (incluye 4 servicios)"
+                    price="$1800"
+                    image="/images/botellas-etiqueta-negra.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Buchanans"
+                    comment="750ml (incluye 4 servicios)"
+                    price="$1800"
+                    image="/images/buchanans.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Maestro Tequilero"
+                    comment="750ml (incluye 4 servicios)"
+                    price="$1800"
+                    image="/images/maestro-dobel.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Don Julio 70"
+                    comment="750ml (incluye 4 servicios)"
+                    price="$1800"
+                    image="/images/don-julio.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Tradicional Reposado"
+                    comment="695ml (incluye 4 servicios)"
+                    price="$1300"
+                    image="/images/tradicional.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="José Cuervo Plata"
+                    comment="695ml (incluye 4 servicios)"
+                    price="$1300"
+                    image="/images/cuervoplata.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
 
             <SectionTitle title="Tequilas" />
-            <MenuCard
-                name="Maestro dobel"
-                comment="Shoot 1/2 oz"
-                price="$150"
-                image="/images/tequilas.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Don Julio 70"
-                comment="Shoot 1/2 oz"
-                price="$150"
-                image="/images/tequilas.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Tradicional Reposado"
-                comment="Shoot 1/2 oz"
-                price="$120"
-                image="/images/tequilas.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Maestro dobel"
+                    comment="Shoot 1/2 oz"
+                    price="$150"
+                    image="/images/tequilas.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Don Julio 70"
+                    comment="Shoot 1/2 oz"
+                    price="$150"
+                    image="/images/tequilas.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Tradicional Reposado"
+                    comment="Shoot 1/2 oz"
+                    price="$120"
+                    image="/images/tequilas.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Tradicional Plata"
-                comment="Shoot 1/2 oz"
-                price="$120"
-                image="/images/tequilas.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Tradicional Plata"
+                    comment="Shoot 1/2 oz"
+                    price="$120"
+                    image="/images/tequilas.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
 
             <SectionTitle title="Ron" />
-            <MenuCard
-                name="Ron Zacapa 23"
-                comment="Shoot 1/2 oz"
-                price="$180"
-                image="/images/ron.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Capitán Morgan"
-                comment="Shoot 1/2 oz"
-                price="$130"
-                image="/images/ron.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Ron Zacapa 23"
+                    comment="Shoot 1/2 oz"
+                    price="$180"
+                    image="/images/ron.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Capitán Morgan"
+                    comment="Shoot 1/2 oz"
+                    price="$130"
+                    image="/images/ron.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
 
-            <MenuCard
-                name="Bacardi Blanco"
-                comment="Shoot 1/2 oz"
-                price="$130"
-                image="/images/ron.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <SectionTitle title="Vodka" />
-            <MenuCard
-                name="Absolut"
-                comment="Shoot 1/2 oz"
-                price="$120"
-                image="/images/vodka.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Smirnoff Clásico"
-                comment="Shoot 1/2 oz"
-                price="$120"
-                image="/images/vodka.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <SectionTitle title="Coctelería" />
-            <MenuCard
-                name="Cantarito"
-                comment="Cantarito estilo Jalisco"
-                price="$130"
-                image="/images/jarrito.jpeg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Piña Colada"
-                comment=""
-                price="$130"
-                image="/images/pinacolada.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Pantera rosa"
-                comment=""
-                price="$130"
-                image="/images/pantera-rosa.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Vampiro"
-                comment=""
-                price="$130"
-                image="/images/vampiro.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Perro salado"
-                comment=""
-                price="$130"
-                image="/images/perro-salado.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Paloma"
-                comment=""
-                price="$130"
-                image="/images/paloma.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Margarita"
-                comment=""
-                price="$130"
-                image="/images/margarita.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Perla Negra"
-                comment=""
-                price="$130"
-                image="/images/perla-negra.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Desarmador"
-                comment=""
-                price="$130"
-                image="/images/desarmador.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Tequile Sunrise"
-                comment=""
-                price="$130"
-                image="/images/tequila-sunrise.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <MenuCard
-                name="Mariamoyada"
-                comment=""
-                price="$130"
-                image="/images/mariamoyada.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-
-            <SectionTitle title="Digestivos" />
-            <MenuCard
-                name="Baileys"
-                comment="Digestivo suave para cerrar con buen sabor."
-                price="$100"
-                image="/images/baileys.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
-            <MenuCard
-                name="Licor 43"
-                comment="Digestivo suave para cerrar con buen sabor."
-                price="$100"
-                image="/images/licor43.jpg"
-                loading="lazy"
-                placeholder="blur"
-            />
+                <MenuCard
+                    name="Bacardi Blanco"
+                    comment="Shoot 1/2 oz"
+                    price="$130"
+                    image="/images/ron.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
         </div>
+    </section>
 
-        <!-- cambiar secciones -->
-        <script>
-            const tabs = document.querySelectorAll(".tab-item");
-            const sections = document.querySelectorAll(".menu-section");
+    <!-- cambiar secciones -->
+    <script>
+        const tabs = document.querySelectorAll(".tab-item");
+        const sections = document.querySelectorAll(".menu-section");
 
-            const ANIM_CLASS = "animate-soft-pop";
+        const ANIM_CLASS = "animate-soft-pop";
 
-            tabs.forEach((tab) => {
-                tab.addEventListener("click", () => {
-                    tabs.forEach((t) =>
-                        t.classList.remove(
-                            "text-[#79B743]",
-                            "border-[#79B743]",
-                            "active",
-                        ),
-                    );
-
-                    tab.classList.add(
-                        "text-[#79B743]",
-                        "border-[#79B743]",
+        tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                tabs.forEach((t) =>
+                    t.classList.remove(
+                        "text-[#ffcc3d]",
+                        "border-[#ffcc3d]",
                         "active",
-                    );
+                    ),
+                );
 
-                    const selected = tab.dataset.section;
+                tab.classList.add(
+                    "text-[#ffcc3d]",
+                    "border-[#ffcc3d]",
+                    "active",
+                );
 
-                    sections.forEach((section) => {
-                        const matches =
-                            selected === "todo" ||
-                            section.dataset.category === selected;
+                const selected = tab.dataset.section;
 
-                        if (matches) {
-                            // Mostrar sección
-                            section.classList.remove("hidden", "opacity-0");
-                            section.classList.add("opacity-100");
+                sections.forEach((section) => {
+                    const matches =
+                        selected === "todo" ||
+                        section.dataset.category === selected;
 
-                            // Reiniciar animación (truco mágico)
-                            section.classList.remove(
-                                "animate-slide-blur",
-                                "animate-soft-pop",
-                                "animate-fade-side",
-                            );
-                            void section.offsetWidth;
+                    if (matches) {
+                        // Mostrar sección
+                        section.classList.remove("hidden", "opacity-0");
+                        section.classList.add("opacity-100");
 
-                            // Agregar animación elegida
-                            section.classList.add(ANIM_CLASS);
-                        } else {
-                            // Ocultar sección
-                            section.classList.add("hidden", "opacity-0");
-                            section.classList.remove("opacity-100");
-                        }
-                    });
+                        // Reiniciar animación (truco mágico)
+                        section.classList.remove(
+                            "animate-slide-blur",
+                            "animate-soft-pop",
+                            "animate-fade-side",
+                        );
+                        void section.offsetWidth;
+
+                        // Agregar animación elegida
+                        section.classList.add(ANIM_CLASS);
+                    } else {
+                        // Ocultar sección
+                        section.classList.add("hidden", "opacity-0");
+                        section.classList.remove("opacity-100");
+                    }
                 });
             });
-        </script>
+        });
+    </script>
 
-        <script>
-            const observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add("show");
-                        }
-                    });
-                },
-                { threshold: 0.2 },
-            );
+    <script>
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            },
+            { threshold: 0.2 },
+        );
 
-            document
-                .querySelectorAll(
-                    ".cantina-reveal, .smoke-reveal, .agave-reveal",
-                )
-                .forEach((el) => observer.observe(el));
-        </script>
-    </section>
+        document
+            .querySelectorAll(".cantina-reveal, .smoke-reveal, .agave-reveal")
+            .forEach((el) => observer.observe(el));
+    </script>
 </BaseLayout>
