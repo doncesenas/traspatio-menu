@@ -79,7 +79,7 @@ import MenuCard from "../components/MenuCard.astro";
             minimo de 20 minutos.
         </div>
 
-        <div data-category="entradas" class="menu-section">
+        <div data-category="entradas" class="menu-section smoke-reveal">
             <SectionTitle title="Entradas" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <MenuCard
@@ -143,7 +143,7 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="palcentro" class="menu-section">
+        <div data-category="palcentro" class="menu-section smoke-reveal">
             <SectionTitle title="Pal Centro" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <MenuCard
@@ -173,7 +173,7 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="parrillero" class="menu-section">
+        <div data-category="parrillero" class="menu-section smoke-reveal">
             <SectionTitle title="Parrillero" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <MenuCard
@@ -228,7 +228,7 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="mariscos" class="menu-section">
+        <div data-category="mariscos" class="menu-section smoke-reveal">
             <SectionTitle title="Aguachiles" />
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -317,7 +317,7 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="tacos" class="menu-section">
+        <div data-category="tacos" class="menu-section smoke-reveal">
             <SectionTitle title="Tacos" />
 
             <MenuCard
@@ -375,7 +375,7 @@ import MenuCard from "../components/MenuCard.astro";
             />
         </div>
 
-        <div data-category="botanero" class="menu-section">
+        <div data-category="botanero" class="menu-section smoke-reveal">
             <SectionTitle title="Botanero" />
 
             <MenuCard
@@ -451,7 +451,7 @@ import MenuCard from "../components/MenuCard.astro";
             />
         </div>
 
-        <div data-category="delacasa" class="menu-section">
+        <div data-category="delacasa" class="menu-section smoke-reveal">
             <SectionTitle title="De La Casa" />
 
             <MenuCard
@@ -491,17 +491,11 @@ import MenuCard from "../components/MenuCard.astro";
             />
         </div>
 
-        <div data-category="postres" class="menu-section">
+        <div data-category="postres" class="menu-section smoke-reveal">
             <SectionTitle title="Postres" />
-
-            <div
-                class="text-3xl italic font-bold text-center text-[#f15323] mb-10"
-            >
-                Disfruta tu cena con un rico postre de temporada
-            </div>
         </div>
 
-        <div data-category="refrescos" class="menu-section">
+        <div data-category="refrescos" class="menu-section smoke-reveal">
             <SectionTitle title="Refrescos" />
 
             <MenuCard
@@ -563,7 +557,7 @@ import MenuCard from "../components/MenuCard.astro";
             />
         </div>
 
-        <div data-category="bar" class="menu-section">
+        <div data-category="bar" class="menu-section smoke-reveal">
             <SectionTitle title="Cervezas" />
             <MenuCard
                 name="Tecate Light"
@@ -655,303 +649,304 @@ import MenuCard from "../components/MenuCard.astro";
                 loading="lazy"
                 placeholder="blur"
             />
+            <SectionTitle title="Whisky" />
+            <MenuCard
+                name="Etiqueta negra"
+                comment="Shoot 1/2 oz"
+                price="$150"
+                image="/images/whisky.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Chivas 12"
+                comment="Shoot 1/2 oz"
+                price="$150"
+                image="/images/whisky.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Buchanans"
+                comment="Shoot 1/2 oz"
+                price="$150"
+                image="/images/whisky.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <SectionTitle title="Mezcal" />
+            <MenuCard
+                name="Mezcal 400 conejos"
+                comment="Shoot 1/2 oz"
+                price="$130"
+                image="/images/mezcal.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Mezcalita"
+                comment="Shoot"
+                price="$140"
+                image="/images/mezcal.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <SectionTitle title="Botellas" />
+            <MenuCard
+                name="Etiqueta Negra"
+                comment="750ml (incluye 4 servicios)"
+                price="$1800"
+                image="/images/botellas-etiqueta-negra.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Buchanans"
+                comment="750ml (incluye 4 servicios)"
+                price="$1800"
+                image="/images/buchanans.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Maestro Tequilero"
+                comment="750ml (incluye 4 servicios)"
+                price="$1800"
+                image="/images/maestro-dobel.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Don Julio 70"
+                comment="750ml (incluye 4 servicios)"
+                price="$1800"
+                image="/images/don-julio.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Tradicional Reposado"
+                comment="695ml (incluye 4 servicios)"
+                price="$1300"
+                image="/images/tradicional.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="José Cuervo Plata"
+                comment="695ml (incluye 4 servicios)"
+                price="$1300"
+                image="/images/cuervoplata.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <SectionTitle title="Tequilas" />
+            <MenuCard
+                name="Maestro dobel"
+                comment="Shoot 1/2 oz"
+                price="$150"
+                image="/images/tequilas.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Don Julio 70"
+                comment="Shoot 1/2 oz"
+                price="$150"
+                image="/images/tequilas.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Tradicional Reposado"
+                comment="Shoot 1/2 oz"
+                price="$120"
+                image="/images/tequilas.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Tradicional Plata"
+                comment="Shoot 1/2 oz"
+                price="$120"
+                image="/images/tequilas.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <SectionTitle title="Ron" />
+            <MenuCard
+                name="Ron Zacapa 23"
+                comment="Shoot 1/2 oz"
+                price="$180"
+                image="/images/ron.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Capitán Morgan"
+                comment="Shoot 1/2 oz"
+                price="$130"
+                image="/images/ron.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Bacardi Blanco"
+                comment="Shoot 1/2 oz"
+                price="$130"
+                image="/images/ron.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <SectionTitle title="Vodka" />
+            <MenuCard
+                name="Absolut"
+                comment="Shoot 1/2 oz"
+                price="$120"
+                image="/images/vodka.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Smirnoff Clásico"
+                comment="Shoot 1/2 oz"
+                price="$120"
+                image="/images/vodka.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <SectionTitle title="Coctelería" />
+            <MenuCard
+                name="Cantarito"
+                comment="Cantarito estilo Jalisco"
+                price="$130"
+                image="/images/jarrito.jpeg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Piña Colada"
+                comment=""
+                price="$130"
+                image="/images/pinacolada.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Pantera rosa"
+                comment=""
+                price="$130"
+                image="/images/pantera-rosa.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Vampiro"
+                comment=""
+                price="$130"
+                image="/images/vampiro.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Perro salado"
+                comment=""
+                price="$130"
+                image="/images/perro-salado.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Paloma"
+                comment=""
+                price="$130"
+                image="/images/paloma.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Margarita"
+                comment=""
+                price="$130"
+                image="/images/margarita.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Perla Negra"
+                comment=""
+                price="$130"
+                image="/images/perla-negra.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Desarmador"
+                comment=""
+                price="$130"
+                image="/images/desarmador.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Tequile Sunrise"
+                comment=""
+                price="$130"
+                image="/images/tequila-sunrise.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <MenuCard
+                name="Mariamoyada"
+                comment=""
+                price="$130"
+                image="/images/mariamoyada.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+
+            <SectionTitle title="Digestivos" />
+            <MenuCard
+                name="Baileys"
+                comment="Digestivo suave para cerrar con buen sabor."
+                price="$100"
+                image="/images/baileys.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
+            <MenuCard
+                name="Licor 43"
+                comment="Digestivo suave para cerrar con buen sabor."
+                price="$100"
+                image="/images/licor43.jpg"
+                loading="lazy"
+                placeholder="blur"
+            />
         </div>
-        <SectionTitle title="Whisky" />
-        <MenuCard
-            name="Etiqueta negra"
-            comment="Shoot 1/2 oz"
-            price="$150"
-            image="/images/whisky.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Chivas 12"
-            comment="Shoot 1/2 oz"
-            price="$150"
-            image="/images/whisky.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Buchanans"
-            comment="Shoot 1/2 oz"
-            price="$150"
-            image="/images/whisky.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <SectionTitle title="Mezcal" />
-        <MenuCard
-            name="Mezcal 400 conejos"
-            comment="Shoot 1/2 oz"
-            price="$130"
-            image="/images/mezcal.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Mezcalita"
-            comment="Shoot"
-            price="$140"
-            image="/images/mezcal.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <SectionTitle title="Botellas" />
-        <MenuCard
-            name="Etiqueta Negra"
-            comment="750ml (incluye 4 servicios)"
-            price="$1800"
-            image="/images/botellas-etiqueta-negra.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Buchanans"
-            comment="750ml (incluye 4 servicios)"
-            price="$1800"
-            image="/images/buchanans.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Maestro Tequilero"
-            comment="750ml (incluye 4 servicios)"
-            price="$1800"
-            image="/images/maestro-dobel.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Don Julio 70"
-            comment="750ml (incluye 4 servicios)"
-            price="$1800"
-            image="/images/don-julio.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Tradicional Reposado"
-            comment="695ml (incluye 4 servicios)"
-            price="$1300"
-            image="/images/tradicional.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="José Cuervo Plata"
-            comment="695ml (incluye 4 servicios)"
-            price="$1300"
-            image="/images/cuervoplata.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <SectionTitle title="Tequilas" />
-        <MenuCard
-            name="Maestro dobel"
-            comment="Shoot 1/2 oz"
-            price="$150"
-            image="/images/tequilas.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Don Julio 70"
-            comment="Shoot 1/2 oz"
-            price="$150"
-            image="/images/tequilas.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Tradicional Reposado"
-            comment="Shoot 1/2 oz"
-            price="$120"
-            image="/images/tequilas.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Tradicional Plata"
-            comment="Shoot 1/2 oz"
-            price="$120"
-            image="/images/tequilas.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <SectionTitle title="Ron" />
-        <MenuCard
-            name="Ron Zacapa 23"
-            comment="Shoot 1/2 oz"
-            price="$180"
-            image="/images/ron.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Capitán Morgan"
-            comment="Shoot 1/2 oz"
-            price="$130"
-            image="/images/ron.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Bacardi Blanco"
-            comment="Shoot 1/2 oz"
-            price="$130"
-            image="/images/ron.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <SectionTitle title="Vodka" />
-        <MenuCard
-            name="Absolut"
-            comment="Shoot 1/2 oz"
-            price="$120"
-            image="/images/vodka.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Smirnoff Clásico"
-            comment="Shoot 1/2 oz"
-            price="$120"
-            image="/images/vodka.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <SectionTitle title="Coctelería" />
-        <MenuCard
-            name="Cantarito"
-            comment="Cantarito estilo Jalisco"
-            price="$130"
-            image="/images/jarrito.jpeg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Piña Colada"
-            comment=""
-            price="$130"
-            image="/images/pinacolada.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Pantera rosa"
-            comment=""
-            price="$130"
-            image="/images/pantera-rosa.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Vampiro"
-            comment=""
-            price="$130"
-            image="/images/vampiro.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Perro salado"
-            comment=""
-            price="$130"
-            image="/images/perro-salado.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Paloma"
-            comment=""
-            price="$130"
-            image="/images/paloma.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Margarita"
-            comment=""
-            price="$130"
-            image="/images/margarita.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Perla Negra"
-            comment=""
-            price="$130"
-            image="/images/perla-negra.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Desarmador"
-            comment=""
-            price="$130"
-            image="/images/desarmador.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Tequile Sunrise"
-            comment=""
-            price="$130"
-            image="/images/tequila-sunrise.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <MenuCard
-            name="Mariamoyada"
-            comment=""
-            price="$130"
-            image="/images/mariamoyada.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-
-        <SectionTitle title="Digestivos" />
-        <MenuCard
-            name="Baileys"
-            comment="Digestivo suave para cerrar con buen sabor."
-            price="$100"
-            image="/images/baileys.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
-        <MenuCard
-            name="Licor 43"
-            comment="Digestivo suave para cerrar con buen sabor."
-            price="$100"
-            image="/images/licor43.jpg"
-            loading="lazy"
-            placeholder="blur"
-        />
 
         <!-- cambiar secciones -->
         <script>
             const tabs = document.querySelectorAll(".tab-item");
             const sections = document.querySelectorAll(".menu-section");
 
+            const ANIM_CLASS = "animate-soft-pop";
+
             tabs.forEach((tab) => {
                 tab.addEventListener("click", () => {
-                    // Quitar clase activa a todos
                     tabs.forEach((t) =>
                         t.classList.remove(
                             "text-[#79B743]",
@@ -959,31 +954,62 @@ import MenuCard from "../components/MenuCard.astro";
                             "active",
                         ),
                     );
-                    // Agregar clase activa al actual
+
                     tab.classList.add(
                         "text-[#79B743]",
                         "border-[#79B743]",
                         "active",
                     );
 
-                    // @ts-ignore
                     const selected = tab.dataset.section;
 
                     sections.forEach((section) => {
-                        if (
+                        const matches =
                             selected === "todo" ||
-                            // @ts-ignore
-                            section.dataset.category === selected
-                        ) {
+                            section.dataset.category === selected;
+
+                        if (matches) {
+                            // Mostrar sección
                             section.classList.remove("hidden", "opacity-0");
                             section.classList.add("opacity-100");
+
+                            // Reiniciar animación (truco mágico)
+                            section.classList.remove(
+                                "animate-slide-blur",
+                                "animate-soft-pop",
+                                "animate-fade-side",
+                            );
+                            void section.offsetWidth;
+
+                            // Agregar animación elegida
+                            section.classList.add(ANIM_CLASS);
                         } else {
+                            // Ocultar sección
                             section.classList.add("hidden", "opacity-0");
                             section.classList.remove("opacity-100");
                         }
                     });
                 });
             });
+        </script>
+
+        <script>
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("show");
+                        }
+                    });
+                },
+                { threshold: 0.2 },
+            );
+
+            document
+                .querySelectorAll(
+                    ".cantina-reveal, .smoke-reveal, .agave-reveal",
+                )
+                .forEach((el) => observer.observe(el));
         </script>
     </section>
 </BaseLayout>

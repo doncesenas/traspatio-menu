@@ -14,67 +14,72 @@
     }
 }
 
-@keyframes fadeInUp {
-    from {
+@keyframes softPop {
+    0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: scale(0.75);
     }
 
-    to {
+    100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: scale(1);
     }
 }
 
-.bg-fake-fixed {
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transform: translateZ(0);
+.animate-soft-pop {
+    animation: softPop 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 
-.card-hover:hover {
-    animation: cardHover 0.3s ease-in-out forwards;
+
+@keyframes cantinaRise {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95) rotate(-1deg);
+        filter: blur(5px);
+    }
+
+    70% {
+        transform: translateY(-6px) scale(1.02) rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(0deg);
+        filter: blur(0);
+    }
 }
 
-.animate-fadeInUp {
-    animation: fadeInUp 0.8s ease-out forwards;
+.cantina-reveal {
+    opacity: 0;
 }
 
-.delay-\[150ms\] {
-    animation-delay: 150ms;
+@keyframes smokeSide {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+        filter: blur(4px);
+    }
+
+    60% {
+        transform: translateX(6px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        filter: blur(0);
+    }
 }
 
-.delay-\[300ms\] {
-    animation-delay: 300ms;
+.smoke-reveal {
+    opacity: 0;
+}
+
+.smoke-reveal.show {
+    animation: smokeSide 0.6s ease-out forwards;
 }
 
 :root {
     padding-bottom: env(safe-area-inset-bottom);
-}
-
-/* global.css */
-
-/* ... (tus estilos existentes) ... */
-
-/* * CORRECCIÓN PARA IOS SAFARI (Reemplaza 100vh con 100dvh)
- * Esto sobreescribe la funcionalidad de la clase min-h-screen de Tailwind
- * cuando se usa en el <body>.
- */
-@supports (min-height: 100dvh) {
-
-    body,
-    html,
-    #root,
-    .min-h-screen {
-        /* Usa la unidad dinámica del viewport, que se ajusta a las barras de Safari */
-        min-height: 100dvh;
-    }
-}
-
-/* Fallback para navegadores antiguos que no soportan dvh */
-.min-h-screen {
-    min-height: 100vh;
 }
