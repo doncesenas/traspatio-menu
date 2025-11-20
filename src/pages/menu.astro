@@ -36,6 +36,12 @@ import MenuCard from "../components/MenuCard.astro";
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
                 data-section="palcentro">Pal Centro</span
             >
+
+            <span
+                class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
+                data-section="especiales">ESPECIALES</span
+            >
+
             <span
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
                 data-section="parrillero">Parrillero</span
@@ -155,18 +161,32 @@ import MenuCard from "../components/MenuCard.astro";
                     placeholder="blur"
                 />
                 <MenuCard
-                    name="Chicharrón de Pescado"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$200"
-                    image="/images/chicharrondepescado.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
                     name="Empalmes"
                     comment="3 empalmes cortados en cuatro partes con guacamole para acompañar."
                     price="160"
                     image="/images/empalmes.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+            </div>
+        </div>
+
+        <div data-category="especiales" class="menu-section">
+            <SectionTitle title="Especiales de la Casa" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
+                <MenuCard
+                    name="Molcajete Mar y Tierra"
+                    comment="Deliciosa combinación de mariscos y carne en una excelente y generosa presentación"
+                    price="$450"
+                    image="/images/molcajetemar.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Chicharrón de Pescado"
+                    comment="Pescado empanizado servido en una cama del guacamole de la casa"
+                    price="$220"
+                    image="/images/chicharrondepescado.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -278,7 +298,7 @@ import MenuCard from "../components/MenuCard.astro";
                     placeholder="blur"
                 />
                 <MenuCard
-                    name="Coctel de Camarón grande"
+                    name="Coctel de Camarón Mediano"
                     comment="Coctel refrescante con un toque norteño."
                     price="$190"
                     image="/images/coctel-camaron-grande.webp"
@@ -359,7 +379,7 @@ import MenuCard from "../components/MenuCard.astro";
                 <MenuCard
                     name="Tacos de Arrachera"
                     comment="250 grs."
-                    price="$190"
+                    price="$220"
                     image="/images/tacos-ribeye.webp"
                     loading="lazy"
                     placeholder="blur"
@@ -675,6 +695,14 @@ import MenuCard from "../components/MenuCard.astro";
                     placeholder="blur"
                 />
                 <MenuCard
+                    name="Etiqueta roja"
+                    comment="Shoot 1/2 oz"
+                    price="$150"
+                    image="/images/whisky.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
                     name="Chivas 12"
                     comment="Shoot 1/2 oz"
                     price="$150"
@@ -719,6 +747,14 @@ import MenuCard from "../components/MenuCard.astro";
                     comment="750ml (incluye 4 servicios)"
                     price="$1800"
                     image="/images/botellas-etiqueta-negra.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Etiqueta Roja"
+                    comment="750ml (incluye 4 servicios)"
+                    price="$1800"
+                    image="/images/etiquetaroja.jpg"
                     loading="lazy"
                     placeholder="blur"
                 />
