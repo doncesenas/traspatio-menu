@@ -50,9 +50,20 @@
     </div>
 
     <div
-        class="border-t border-white/10 py-3 text-center text-xs text-stone-400"
+        class="border-t border-white/10 py-3 text-center text-xs text-stone-400 flex flex-col md:flex-row gap-1 justify-center items-center"
     >
-        © {new Date().getFullYear()} Maria Chelas | Restaurante-Bar — Todos los
-        derechos reservados.
+        <span>
+            © {new Date().getFullYear()} Maria Chelas | Restaurante-Bar — Todos
+            los derechos reservados.
+        </span>
+
+        <span class="hidden md:inline">•</span>
+
+        <a
+            href="/aviso-privacidad"
+            class="text-stone-300 hover:text-[#79B743] transition-colors duration-300"
+        >
+            Aviso de Privacidad
+        </a>
     </div>
 </footer>
