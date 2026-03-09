@@ -29,41 +29,24 @@ import MenuCard from "../components/MenuCard.astro";
             >
             <span
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="entradas">Entradas</span
+                data-section="compartir">Para compartir</span
             >
 
             <span
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="palcentro">Pal Centro</span
+                data-section="mariscos">Del Mar</span
             >
 
             <span
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="especiales">ESPECIALES</span
-            >
-
-            <span
-                class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="parrillero">Parrillero</span
-            >
-
-            <span
-                class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="mariscos">Mariscos</span
+                data-section="parrillero">De la Parrilla</span
             >
 
             <span
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
                 data-section="tacos">Tacos</span
             >
-            <span
-                class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="botanero">Botanero</span
-            >
-            <span
-                class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="delacasa">De la casa</span
-            >
+
             <span
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
                 data-section="postres">Postres</span
@@ -71,12 +54,7 @@ import MenuCard from "../components/MenuCard.astro";
 
             <span
                 class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="refrescos">Refrescos</span
-            >
-
-            <span
-                class="tab-item border-b-2 border-transparent hover:text-[#f8ab68] transition-all duration-300 cursor-pointer"
-                data-section="bar">Nuestro bar</span
+                data-section="bebidas">Bebidas</span
             >
         </div>
 
@@ -85,36 +63,47 @@ import MenuCard from "../components/MenuCard.astro";
             minimo de 20 minutos.
         </div>
 
-        <div data-category="entradas" class="menu-section">
-            <SectionTitle title="Entradas" />
+        <div data-category="compartir" class="menu-section">
+            <SectionTitle title="" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
+                    name="Nachos con Sirloin"
+                    comment="Totopo con queso amarillo, 200 gr de sirloin, jalapeños, frijoles, lechuga y tomate picados."
+                    price="$250"
+                    image="/images/nachossirloin.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+
+                <MenuCard
                     name="Papas Rancheras"
-                    comment="Papas Galeanas confitadas en chile secos"
+                    comment="300gr de papa galeana con salsa de chile rojo, limón, parmesano y cilantro."
                     price="$80"
                     image="/images/papas-rancheras.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
                 <MenuCard
-                    name="Frijoles con veneno"
-                    comment="Frijoles bien machacados al estilo norteño, con sazón casera."
-                    price="$70"
-                    image="/images/frijoles-veneno.webp"
+                    name="Papas a la francesa"
+                    comment="450 gr de papas sazonadas con lemon pepper"
+                    price="$110.00"
+                    image="/images/papas-francesa.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
+
                 <MenuCard
-                    name="Queso fundido"
-                    comment="Al natural o con chorizo (350gr)"
-                    price="$140"
-                    image="/images/queso-flameado.jpg"
+                    name="Guacamole con pico de gallo"
+                    comment="Aguacate machacado con pico de gallo, acompañado de totopos y salsa verde."
+                    price="$85"
+                    image="/images/guacamole-tacos.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
+
                 <MenuCard
-                    name="Guacamole con flautas"
-                    comment="Guacamole fresco con el toque norteño clásico."
+                    name="Guacamole con flautas de res"
+                    comment="Aguacate machacado con pico de gallo, acompañado de 3 flautas de res, con su crema, cilantro, totopos y salsa verde de acompañamiento."
                     price="$110"
                     image="/images/guacamole-tacos.webp"
                     loading="lazy"
@@ -122,7 +111,7 @@ import MenuCard from "../components/MenuCard.astro";
                 />
                 <MenuCard
                     name="Guacamole con carnitas de cerdo"
-                    comment="Guacamole fresco con el toque norteño clásico."
+                    comment="Aguacate machacado con pico de gallo, carnitas de cerdo, acompañado de tortillas, totopos y salsa verde."
                     price="$150"
                     image="/images/guacamole-carnitas.webp"
                     loading="lazy"
@@ -130,118 +119,28 @@ import MenuCard from "../components/MenuCard.astro";
                 />
 
                 <MenuCard
-                    name="Guacamole con pico de gallo"
-                    comment="Guacamole fresco con el toque norteño clásico."
-                    price="$80"
-                    image="/images/guacamole-tacos.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
-                    name="Papas a la francesa"
-                    comment="(450gr)"
-                    price="$90.00"
-                    image="/images/papas-francesa.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-            </div>
-        </div>
-
-        <div data-category="palcentro" class="menu-section">
-            <SectionTitle title="Pal Centro" />
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
-                <MenuCard
-                    name="Chicharrón de RibEye"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$240"
-                    image="/images/chicharronribeye.jpg"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
-                    name="Empalmes"
-                    comment="3 empalmes cortados en cuatro partes con guacamole para acompañar."
-                    price="160"
-                    image="/images/empalmes.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-            </div>
-        </div>
-
-        <div data-category="especiales" class="menu-section">
-            <SectionTitle title="Especiales de la Casa" />
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
-                <MenuCard
-                    name="Molcajete Mar y Tierra"
-                    comment="Deliciosa combinación de mariscos y carne en una excelente y generosa presentación"
-                    price="$450"
-                    image="/images/molcajetemar.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
-                    name="Chicharrón de Pescado"
-                    comment="Pescado empanizado servido en una cama del guacamole de la casa"
-                    price="$220"
-                    image="/images/chicharrondepescado.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-            </div>
-        </div>
-
-        <div data-category="parrillero" class="menu-section">
-            <SectionTitle title="Parrillero" />
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
-                <MenuCard
-                    name="Corte de Ribeye"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$350"
-                    image="/images/ribeye.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
-                    name="Corte de Arrachera"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$350"
-                    image="/images/arrachera.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
                     name="Costillas al tajín"
-                    comment="(350gr)"
-                    price="$160"
+                    comment="350 gr de flecha de res, guacamole con pico de gallo, cebolla morada y totopos."
+                    price="$199"
                     image="/images/costillas-tajin.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
+
                 <MenuCard
-                    name="Fajitas de pollo enchiladas"
-                    comment="Pollo jugoso con sazón casera del norte."
-                    price="$180"
-                    image="/images/fajitas-pollo.webp"
+                    name="Boneless súper crunchy"
+                    comment="250 gr de pechuga de pollo empanizado, bañados en salsa, 150 gr de papas a la francesa con lemon pepper, apio, zanahoria y ranch.  Elige la salsa de tu preferencia: buffalo, BBQ o mango habanero."
+                    price="$190"
+                    image="/images/crunchy.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
 
                 <MenuCard
-                    name="Parrillada"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$440"
-                    image="/images/parrilladaarrachera.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
-                    name="Parrillada Mixta"
-                    comment="Pollo y res"
-                    price="$400"
-                    image="/images/parrillada-mixta.webp"
+                    name="Orden de alitas"
+                    comment="500gr de alitas bañadas en salsa, 150 gr de papas a la francesa, apio, zanahoria y ranch. Elige la salsa de tu preferencia: buffalo, BBQ o mango habanero."
+                    price="$270"
+                    image="/images/alitas.jpg"
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -249,41 +148,43 @@ import MenuCard from "../components/MenuCard.astro";
         </div>
 
         <div data-category="mariscos" class="menu-section">
-            <SectionTitle title="Aguachiles" />
+            <SectionTitle title="" />
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Aguachile Negro"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
+                    comment="250 gr de camarón, pepino, cebolla morada, acompañado de tostadas, bañado en la salsa de tu preferencia. | Verde | Rojo | Negro | (mezcla de salsa verde, roja y salsas negras)"
                     price="$220"
                     image="/images/aguachilenegro.jpg"
                     loading="lazy"
                     placeholder="blur"
                 />
-                <MenuCard
-                    name="Aguachile Verde"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$220"
-                    image="/images/aguachileverde.jpg"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
-                    name="Aguachile Rojo"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$220"
-                    image="/images/aguachile-rojo.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
             </div>
 
-            <SectionTitle title="Camarones" />
+            <SectionTitle title="" />
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
+                    name="Coctel de Camarones"
+                    comment="250 gr de camarón cocido, pico de gallo, pepino, aguacate y nuestra mezcla de salsa roja coctelera. Acompañado de galletas saladitas."
+                    price="$180"
+                    image="/images/coctel-camaron-grande.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+
+                <MenuCard
+                    name="Chicharrón de Pescado"
+                    comment="200gr de filete tilapia, guacamole con pico de gallo y cebolla morada, acompañado detotopos y chipotle."
+                    price="$220"
+                    image="/images/chicharrondepescado.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+
+                <MenuCard
                     name="Camarones al gusto"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
+                    comment="Acompañados de 150 gr de papas a la francesa, 150 gr de verduras al vapor, galletas saladitas. | Al Chile Seco | Empanizados | Al Chipotle"
                     price="$220"
                     image="/images/camarones-algusto.jpg"
                     loading="lazy"
@@ -291,31 +192,15 @@ import MenuCard from "../components/MenuCard.astro";
                 />
                 <MenuCard
                     name="Ceviche de camarón"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$220"
+                    comment="Disponible en orden o tostada individual"
+                    price="$220 orden o $65 tostada"
                     image="/images/ceviche-camaron.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
-                    name="Coctel de Camarón Mediano"
-                    comment="Coctel refrescante con un toque norteño."
-                    price="$190"
-                    image="/images/coctel-camaron-grande.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-                <MenuCard
-                    name="Coctel de Camarón Chavela"
-                    comment="Coctel refrescante con un toque norteño."
-                    price="$240"
-                    image="/images/coctel-camaron-chavela.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
             </div>
 
-            <SectionTitle title="Pescado" />
+            <SectionTitle title="" />
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
@@ -326,11 +211,43 @@ import MenuCard from "../components/MenuCard.astro";
                     loading="lazy"
                     placeholder="blur"
                 />
+            </div>
+        </div>
+
+        <div data-category="parrillero" class="menu-section">
+            <SectionTitle title="" />
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
-                    name="Ceviche de Pescado"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$200"
-                    image="/images/ceviche-pescado.webp"
+                    name="Molcajete Mar y Tierra"
+                    comment="Guacamole con pico de gallo, cebolla morada, 250 gr de sirloin, 250 gr de camarón al chileseco, acompañado de tortillas, totopos y salsa."
+                    price="$450"
+                    image="/images/molcajetemar.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+
+                <MenuCard
+                    name="Parrilladas"
+                    comment="500gr de carne a su elección, guacamole, 3 quesadillas, cebolla asada, porción de papaasada con mantequilla, tortillas y salsa. Ideal para 2 personas."
+                    price="$400 Arrachera, $300 Ribeye, $380 Mixta (250g arrachera y 250g Rib Eye)"
+                    image="/images/parrillada-mixta.webp"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+
+                <MenuCard
+                    name="Chicharrón de Rib Eye"
+                    comment="Guacamole con pico de gallo, cebolla morada, y 250 gr de rib eye. Acompañado de tortillas,totopos y salsa verde."
+                    price="$280"
+                    image="/images/chicharronribeye.jpg"
+                    loading="lazy"
+                    placeholder="blur"
+                />
+                <MenuCard
+                    name="Hamburguesa Doble"
+                    comment="Pan blanco con doble carne de res, queso americano, jamón, aguacate, lechuga, tomate, cebolla blanca, catsup, mostaza y mayonesa. Acompañada de 150 gr de papas a lafrancesa."
+                    price="$210"
+                    image="/images/hamburgesa-doble.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -338,38 +255,20 @@ import MenuCard from "../components/MenuCard.astro";
         </div>
 
         <div data-category="tacos" class="menu-section smoke-reveal">
-            <SectionTitle title="Tacos" />
+            <SectionTitle title="" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
-                    name="Tacos de Ribeye"
-                    comment="Taco preparado con sazón norteña."
-                    price="$200"
-                    image="/images/tacos-ribeye.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
-                    name="Tacos de Ensenada de Camarón"
-                    comment="3pz, camaron capeado, ensalada de col, chipotle y aguacate"
-                    price="$150"
-                    image="/images/tacos-encenada.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
-                    name="Tacos de Ensenada de Pescado"
-                    comment="3pz, filete capeado, ensalada de col, chipotle y aguacate"
-                    price="$150"
-                    image="/images/tacos-encenada.webp"
+                    name="Tacos Gobernador"
+                    comment="3 tortillas de maíz, 250 gr de camarón, queso gratinado, pico de gallo, cebolla morada, aguacate y chipotle."
+                    price="$250"
+                    image="/images/tacos-gobernador.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
 
                 <MenuCard
                     name="Tacos de Sirloin"
-                    comment="250 grs."
+                    comment="Orden de 4 tacos (doble tortilla), 250 gr de sirloin, 100 gr de papa galeana, cebolla asada y salsa verde aparte."
                     price="$180"
                     image="/images/tacos-ribeye.webp"
                     loading="lazy"
@@ -378,7 +277,7 @@ import MenuCard from "../components/MenuCard.astro";
 
                 <MenuCard
                     name="Tacos de Arrachera"
-                    comment="250 grs."
+                    comment="Orden de 4 tacos (doble tortilla, 250 gr de arrachera, 100 gr de papa galeana, cebolla asaday salsa verde aparte."
                     price="$220"
                     image="/images/tacos-ribeye.webp"
                     loading="lazy"
@@ -386,10 +285,10 @@ import MenuCard from "../components/MenuCard.astro";
                 />
 
                 <MenuCard
-                    name="Tacos Gobernador"
-                    comment="3 piezas."
-                    price="$180"
-                    image="/images/tacos-gobernador.webp"
+                    name="Tacos de Ensenada de Pescado"
+                    comment="3 tortillas de maíz, 100 gr de pescado, queso, aguacate, col morada, cebolla morada ychipotle."
+                    price="$150"
+                    image="/images/tacos-encenada.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -399,15 +298,6 @@ import MenuCard from "../components/MenuCard.astro";
         <div data-category="botanero" class="menu-section">
             <SectionTitle title="Botanero" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
-                <MenuCard
-                    name="Hamburguesa Doble"
-                    comment="Platillo preparado con sazón norteña y calidad de la casa."
-                    price="$210"
-                    image="/images/hamburgesa-doble.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
                 <MenuCard
                     name="Hamburguesa de Camarón"
                     comment="Platillo preparado con sazón norteña y calidad de la casa."
@@ -431,33 +321,6 @@ import MenuCard from "../components/MenuCard.astro";
                     comment="(150 gr de pollo bañado en salsa buffalo, lechuga, tomate , queso americano y aderezo ranch, 150 gr de papas fritas)"
                     price="$160"
                     image="/images/buffalo.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
-                    name="Boneless súper crunchy"
-                    comment="Habanero, Ranch, BBQ,  Búfalo"
-                    price="$180"
-                    image="/images/crunchy.webp"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
-                    name="Orden de alitas"
-                    comment="(500 gr de alitas de pollo, al Tajín, buffalo, mango habanero o bbq, 150 gr de papas)"
-                    price="$200"
-                    image="/images/alitas.jpg"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
-                    name="Nachos con Sirloin"
-                    comment="Queso fundido al estilo del norte con sirloin."
-                    price="$180"
-                    image="/images/nachossirloin.webp"
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -528,7 +391,7 @@ import MenuCard from "../components/MenuCard.astro";
             </div>
         </div>
 
-        <div data-category="refrescos" class="menu-section">
+        <div data-category="bebidas" class="menu-section">
             <SectionTitle title="Refrescos" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
@@ -589,9 +452,7 @@ import MenuCard from "../components/MenuCard.astro";
                     placeholder="blur"
                 />
             </div>
-        </div>
 
-        <div data-category="bar" class="menu-section smoke-reveal">
             <SectionTitle title="Cervezas" />
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
@@ -656,7 +517,7 @@ import MenuCard from "../components/MenuCard.astro";
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="Chelado"
-                    comment=""
+                    comment="Tarro con limón y sal, escarchado con limón y sal."
                     price="$25"
                     image="/images/tarro-chelado.jpg"
                     loading="lazy"
@@ -664,16 +525,16 @@ import MenuCard from "../components/MenuCard.astro";
                 />
                 <MenuCard
                     name="Michelado"
-                    comment="$35"
-                    price=""
+                    price="$40"
+                    comment="Tarro con limón, petróleo de la casa, escarchado con chamoy y tajín."
                     image="/images/tarro-chelado.jpg"
                     loading="lazy"
                     placeholder="blur"
                 />
                 <MenuCard
                     name="Clamato"
-                    comment="$60"
-                    price=""
+                    price="$75"
+                    comment="Tarro con clamato, petróleo de la casa, limón, escarchado con chamoy y tajín."
                     image="/images/tarro-clamato.jpg"
                     loading="lazy"
                     placeholder="blur"
@@ -684,7 +545,7 @@ import MenuCard from "../components/MenuCard.astro";
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 smoke-reveal">
                 <MenuCard
                     name="3 cervezas x $99"
-                    comment="Aplican: Tecate, Indio y Dos Equis"
+                    comment="Aplican: Tecate, Indio y Dos Equis - Válido de Lunes a Jueves."
                     price="$99"
                     image="/images/cubetade3.jpg"
                     loading="lazy"
@@ -754,6 +615,7 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Margarita"
                     image="/images/margarita.jpg"
                     price="$150"
+                    comment="Limón, tequila, jarabe endulzante, escarchada en limón y sal."
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -762,36 +624,25 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Piña Colada"
                     image="/images/pinacolada.jpg"
                     price="$150"
+                    comment="Jugo de piña, crema de coco, bacardi."
                     loading="lazy"
                     placeholder="blur"
                 />
 
-                <MenuCard
-                    name="Pantera Rosa"
-                    image="/images/pantera-rosa.jpg"
-                    price="$150"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
-                    name="Margarita Playera"
-                    image="/images/margarita.jpg"
-                    price="$150"
-                    loading="lazy"
-                    placeholder="blur"
-                />
                 <MenuCard
                     name="Perla Negra"
                     image="/images/perla-negra.jpg"
                     price="$150"
+                    comment="Boost y licor Jagermeister."
                     loading="lazy"
                     placeholder="blur"
                 />
+
                 <MenuCard
                     name="Marimoyada"
                     image="/images/mariamoyada.jpg"
                     price="$150"
+                    comment="Tequila, mango, limón, escarchado con chamoy y tajín."
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -806,17 +657,10 @@ import MenuCard from "../components/MenuCard.astro";
                 />
 
                 <MenuCard
-                    name="Sangrita de la casa"
-                    image="/images/sangrita-mix.jpg"
-                    price="$150"
-                    loading="lazy"
-                    placeholder="blur"
-                />
-
-                <MenuCard
                     name="Cantarito"
                     image="/images/cantarito.jpg"
                     price="$150"
+                    comment="Tequila, jugo de naranja, jugo de toronja, squirt, escarchado con chamoy y tajín."
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -825,34 +669,25 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Vampiro"
                     image="/images/vampiro.jpg"
                     price="$150"
+                    comment="Tequila, limón, squirt, viuda de sánchez, escarchado con chamoy y tajín."
                     loading="lazy"
                     placeholder="blur"
                 />
-                <MenuCard
-                    name="Perro Salado"
-                    image="/images/perro-salado.jpg"
-                    price="$150"
-                    loading="lazy"
-                    placeholder="blur"
-                />
+
                 <MenuCard
                     name="Paloma"
                     image="/images/paloma.jpg"
                     price="$150"
+                    comment="Tequila, limón, squirt, escarchado con limón y sal."
                     loading="lazy"
                     placeholder="blur"
                 />
-                <MenuCard
-                    name="Desarmador"
-                    image="/images/desarmador.jpg"
-                    price="$150"
-                    loading="lazy"
-                    placeholder="blur"
-                />
+
                 <MenuCard
                     name="Tequila Sunrise"
                     image="/images/tequila-sunrise.jpg"
                     price="$150"
+                    comment="Tequila, jugo de naranja, granadina."
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -861,6 +696,7 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Azulito"
                     image="/images/azulito.webp"
                     price="$150"
+                    comment="Vodka, licor curacao, limón, boost y sprite, escarchado con chamoy miguelito azul."
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -869,6 +705,7 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Paloma de Fresa"
                     image="/images/palomadefresa.webp"
                     price="$150"
+                    comment="Tequila, limón, squirt, fresas maceradas, escarchado con chamoy y tajín."
                     loading="lazy"
                     placeholder="blur"
                 />
@@ -876,6 +713,7 @@ import MenuCard from "../components/MenuCard.astro";
                     name="Diablito"
                     image="/images/el-diablo-coctel.jpg"
                     price="$150"
+                    comment="Bacardi, jugo de arándanos, sprite, escarchado con chamoy y tajín."
                     loading="lazy"
                     placeholder="blur"
                 />
