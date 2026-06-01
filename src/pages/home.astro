@@ -1,0 +1,421 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+    title="Maria Chelas | Restaurante-Bar en Monterrey"
+    description="Maria Chelas, restaurante-bar en el centro de Monterrey con mariscos, parrilla, cocteleria y terraza."
+    showNavbar={false}
+>
+    <section class="-mt-20">
+        <!-- HERO SECTION -->
+        <div
+            class="relative min-h-screen overflow-hidden px-6 pt-28 pb-16 flex items-end"
+        >
+            <img
+                src="/images/Terraza.jpg"
+                alt="Ambiente de Maria Chelas"
+                class="absolute inset-0 h-full w-full object-cover object-bottom"
+            />
+            <!-- Capa de degradado sobre la imagen del Hero -->
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-stone-950"
+            >
+            </div>
+
+            <!-- Difuminado inferior del Hero hacia la siguiente sección -->
+            <div
+                class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-stone-950 to-transparent"
+            >
+            </div>
+
+            <div class="relative z-10 mx-auto w-full max-w-6xl">
+                <div class="max-w-4xl">
+                    <span
+                        class="mb-4 inline-block text-sm font-medium uppercase tracking-[0.28em] text-[#f8ab68]"
+                    >
+                        Restaurante-Bar | Monterrey
+                    </span>
+                    <h1
+                        class="text-5xl font-bold leading-[0.95] text-[#ffcc3d] md:text-7xl lg:text-8xl"
+                    >
+                        Maria Chelas
+                    </h1>
+                    <p
+                        class="mt-6 max-w-2xl text-base leading-8 text-stone-100 md:text-xl"
+                    >
+                        El antojo del mar y la parrilla se disfrutan más con el
+                        partido en pantalla desde cualquier mesa. Ven por tus
+                        cocteles favoritos y quédate a dar el mejor show en
+                        nuestras noches de karaoke y grupos en vivo.
+                    </p>
+
+                    <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+                        <a
+                            href="/menu"
+                            class="inline-flex items-center justify-center rounded-lg bg-[#e67e22] px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-lg shadow-black/30 transition hover:bg-[#f5a30c]"
+                        >
+                            Ver menu
+                        </a>
+                        <a
+                            href="/contacto"
+                            class="inline-flex items-center justify-center rounded-lg border border-white/25 px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-stone-100 backdrop-blur-sm transition hover:border-[#ffcc3d] hover:text-[#ffcc3d]"
+                        >
+                            Contacto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENEDOR GENERAL CON DEGRADADO PROFUNDO (Reemplaza al bg-black plano) -->
+        <div class="bg-gradient-to-b from-stone-950 via-black to-stone-950">
+            <!-- SECCIÓN: DEL ANTOJO AL BRINDIS -->
+            <section class="mx-auto max-w-6xl px-6 py-20 md:py-28">
+                <div
+                    class="grid gap-12 md:grid-cols-[0.95fr_1.05fr] md:items-end"
+                >
+                    <div>
+                        <span
+                            class="text-sm font-medium uppercase tracking-[0.28em] text-[#f8ab68]"
+                        >
+                            La mesa se arma facil
+                        </span>
+                        <h2
+                            class="mt-4 text-4xl font-bold leading-tight text-[#ffcc3d] md:text-6xl"
+                        >
+                            Del antojo al brindis, sin cambiar de lugar.
+                        </h2>
+                    </div>
+                    <p class="text-base leading-8 text-stone-300 md:text-lg">
+                        Ven por algo fresco del mar, comparte una parrillada o
+                        deja que la tarde se vaya entre cheve, musica y buena
+                        comprañía. El menu esta hecho para pedir al centro y
+                        disfrutarlo sin prisa.
+                    </p>
+                </div>
+
+                <!-- Tarjetas de Categorías con superposición suave -->
+                <div class="mt-14 grid gap-5 md:grid-cols-3">
+                    <!-- Tarjeta 1 -->
+                    <a
+                        href="/menu"
+                        class="group relative min-h-80 overflow-hidden rounded-lg border border-white/10 bg-stone-950"
+                    >
+                        <img
+                            src="/images/Comida.png"
+                            alt="Aguachile de Maria Chelas"
+                            class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                        />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent"
+                        >
+                        </div>
+                        <div class="absolute inset-x-0 bottom-0 p-6">
+                            <h3 class="text-3xl font-bold text-white">
+                                Del mar
+                            </h3>
+                            <p class="mt-2 text-sm leading-6 text-stone-300">
+                                Aguachiles, cocteles, ceviches y tostadas para
+                                empezar fresco.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Tarjeta 2 -->
+                    <a
+                        href="/menu"
+                        class="group relative min-h-80 overflow-hidden rounded-lg border border-white/10 bg-stone-950"
+                    >
+                        <img
+                            src="/images/Parrilla.png"
+                            alt="Parrillada de Maria Chelas"
+                            class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                        />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent"
+                        >
+                        </div>
+                        <div class="absolute inset-x-0 bottom-0 p-6">
+                            <h3 class="text-3xl font-bold text-white">
+                                Parrilla
+                            </h3>
+                            <p class="mt-2 text-sm leading-6 text-stone-300">
+                                Cortes, tacos y antojos calientes para
+                                compartir.
+                            </p>
+                        </div>
+                    </a>
+
+                    <!-- Tarjeta 3 -->
+                    <a
+                        href="/menu"
+                        class="group relative min-h-80 overflow-hidden rounded-lg border border-white/10 bg-stone-950"
+                    >
+                        <img
+                            src="/images/Cocteleríaa.png"
+                            alt="Cocteles de Maria Chelas"
+                            class="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                        />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-transparent"
+                        >
+                        </div>
+                        <div class="absolute inset-x-0 bottom-0 p-6">
+                            <h3 class="text-3xl font-bold text-white">
+                                Cocteleria
+                            </h3>
+                            <p class="mt-2 text-sm leading-6 text-stone-300">
+                                Tarros, mezcalitas, cantaritos y tragos de la
+                                casa.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- SECCIÓN: TERRAZA Y AMBIENTE (Corregida con desvanecimiento superior e inferior) -->
+            <section class="relative overflow-hidden py-24 md:py-32">
+                <!-- Imagen de fondo -->
+                <img
+                    src="/images/Ambiente.jpg"
+                    alt="Terraza de Maria Chelas"
+                    class="absolute inset-0 h-full w-full object-cover"
+                />
+
+                <!-- Capa oscura general para que el texto resalte -->
+                <div class="absolute inset-0 bg-black/60"></div>
+
+                <!-- 1. DIFUMINADO SUPERIOR: Desvanece el borde de arriba de la imagen hacia el negro -->
+                <div
+                    class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent"
+                >
+                </div>
+
+                <!-- 2. DIFUMINADO INFERIOR: Desvanece el borde de abajo de la imagen hacia el negro -->
+                <div
+                    class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent"
+                >
+                </div>
+
+                <!-- Contenido de la sección -->
+                <div
+                    class="relative z-10 mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-[1fr_0.8fr] md:items-center"
+                >
+                    <div>
+                        <span
+                            class="text-sm font-medium uppercase tracking-[0.28em] text-[#f8ab68]"
+                        >
+                            Terraza y ambiente
+                        </span>
+                        <h2
+                            class="mt-4 text-4xl font-bold leading-tight text-[#ffcc3d] md:text-6xl"
+                        >
+                            Un lugar para llegar temprano y salir tarde.
+                        </h2>
+                    </div>
+
+                    <div
+                        class="border-l border-[#e67e22]/60 pl-6 text-stone-200"
+                    >
+                        <p class="text-lg leading-8">
+                            Musica, terraza, cerveza bien fria y comida hecha al
+                            momento en el centro de Monterrey.
+                        </p>
+                        <dl class="mt-8 grid grid-cols-2 gap-6">
+                            <div>
+                                <dt class="text-sm text-stone-400">
+                                    Ubicacion
+                                </dt>
+                                <dd class="mt-1 font-semibold text-white">
+                                    Centro, Monterrey
+                                </dd>
+                            </div>
+                            <div>
+                                <dt class="text-sm text-stone-400">Plan</dt>
+                                <dd class="mt-1 font-semibold text-white">
+                                    Comida, drinks y terraza
+                                </dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN FINAL: ACCIÓN / MENÚ -->
+            <section class="mx-auto max-w-6xl px-6 py-20 md:py-28">
+                <div
+                    class="grid gap-10 border-y border-white/10 py-14 md:grid-cols-[0.8fr_1.2fr] md:items-center"
+                >
+                    <div>
+                        <img
+                            src="/logoMariachelas.webp"
+                            alt="Logo Maria Chelas"
+                            class="h-auto w-44"
+                        />
+                    </div>
+                    <div>
+                        <h2
+                            class="text-4xl font-bold leading-tight text-[#ffcc3d] md:text-5xl"
+                        >
+                            El menu esta listo. Tu mesa tambien.
+                        </h2>
+                        <p class="mt-5 max-w-2xl leading-8 text-stone-300">
+                            Revisa los platillos, bebidas y promociones antes de
+                            llegar, o ven directo y pide algo para compartir.
+                        </p>
+                        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                            <a
+                                href="/menu"
+                                class="inline-flex items-center justify-center rounded-lg bg-[#e67e22] px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-[#f5a30c]"
+                            >
+                                Abrir menu
+                            </a>
+                            <a
+                                href="/contacto"
+                                class="inline-flex items-center justify-center rounded-lg border border-white/25 px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-stone-100 transition hover:border-[#ffcc3d] hover:text-[#ffcc3d]"
+                            >
+                                Contacto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- NUEVA SECCIÓN: UBICACIÓN Y RESERVACIONES -->
+            <section
+                class="relative overflow-hidden py-24 md:py-32 border-t border-white/10"
+            >
+                <!-- Imagen de fondo provisional -->
+                <img
+                    src="/images/home2.webp"
+                    alt="Fondo Ubicación Maria Chelas"
+                    class="absolute inset-0 h-full w-full object-cover opacity-70"
+                />
+
+                <!-- Capas de difuminado (Igual que la sección de ambiente para mantener consistencia) -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-b from-stone-950/80 via-black/80 to-stone-950/90"
+                >
+                </div>
+                <div
+                    class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent"
+                >
+                </div>
+                <div
+                    class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent"
+                >
+                </div>
+
+                <!-- Contenido interactivo -->
+                <div class="relative z-10 mx-auto max-w-6xl px-6">
+                    <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+                        <!-- Columna Izquierda: Mapa -->
+                        <div class="w-full">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.1706412898975!2d-100.31463942393499!3d25.665637512566775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bf0618a59a21%3A0x2f139c2d958aed94!2sMariachelas%20Terraza%20Restaurante%20bar!5e0!3m2!1ses-419!2smx!4v1780354546802!5m2!1ses-419!2smx"
+                                class="w-full h-80 md:h-96 rounded-2xl shadow-2xl border border-white/10"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            >
+                            </iframe>
+                        </div>
+
+                        <!-- Columna Derecha: Información y Botones -->
+                        <div
+                            class="flex flex-col items-center lg:items-start text-center lg:text-left"
+                        >
+                            <span
+                                class="text-sm font-medium uppercase tracking-[0.28em] text-[#f8ab68]"
+                            >
+                                ¿Dónde encontrarnos?
+                            </span>
+                            <h3
+                                class="mt-4 text-4xl font-bold leading-tight text-[#ffcc3d] md:text-5xl"
+                            >
+                                Nuestra ubicación
+                            </h3>
+
+                            <p
+                                class="mt-6 text-stone-200 text-lg leading-relaxed"
+                            >
+                                Melchor Ocampo #515 Oriente,<br />
+                                Centro de Monterrey 64000, N.L.
+                            </p>
+
+                            <div
+                                class="mt-8 flex flex-col sm:flex-row gap-4 w-full sm:w-auto items-center"
+                            >
+                                <a
+                                    href="https://maps.app.goo.gl/r6V84Xp6R4aC8aEd9"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-flex w-full sm:w-auto items-center justify-center rounded-lg bg-[#e67e22] px-7 py-3 text-sm font-semibold uppercase tracking-[0.16em] text-white shadow-lg shadow-black/30 transition hover:bg-[#f5a30c]"
+                                >
+                                    Cómo llegar
+                                </a>
+
+                                <!-- Botón 2: Reservar (Incrustador Oficial de Google Calendar) -->
+                                <div
+                                    class="w-full sm:w-auto google-cal-wrapper"
+                                >
+                                    <!-- Enlace y Script del botón de Google Calendar -->
+                                    <link
+                                        href="https://calendar.google.com/calendar/scheduling-button-script.css"
+                                        rel="stylesheet"
+                                    />
+                                    <script
+                                        src="https://calendar.google.com/calendar/scheduling-button-script.js"
+                                        async
+                                        is:inline></script>
+                                    <script is:inline>
+                                        (function () {
+                                            var target = document.currentScript;
+                                            window.addEventListener(
+                                                "load",
+                                                function () {
+                                                    calendar.schedulingButton.load(
+                                                        {
+                                                            url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3cY6xOvNbHIMVhNwQE4CPmDIeJZk7IT07kJTFqfOzUQ9Bsv4suIIP-5yE_-LXVd-uShFFMwrGY?gv=true",
+                                                            color: "#F09300",
+                                                            label: "Reservar",
+                                                            target,
+                                                        },
+                                                    );
+                                                },
+                                            );
+                                        })();
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Estilos adicionales rápidos para sobreescribir el botón nativo de Google e igualarlo a tu UI -->
+            <style is:global>
+                .google-cal-wrapper button {
+                    font-family: inherit !important;
+                    font-weight: 600 !important;
+                    text-transform: uppercase !important;
+                    letter-spacing: 0.16em !important;
+                    font-size: 0.875rem !important; /* text-sm */
+                    padding: 0.75rem 1.75rem !important; /* px-7 py-3 */
+                    border-radius: 0.5rem !important; /* rounded-lg */
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3) !important;
+                    height: auto !important;
+                    min-width: 160px !important;
+                    display: inline-flex !important;
+                    align-items: center !important;
+                    justify-content: center !important;
+                    transition: all 0.2s !important;
+                }
+                .google-cal-wrapper button:hover {
+                    background-color: #ffcc3d !important; /* Tono dorado al hacer hover */
+                }
+            </style>
+        </div>
+    </section>
+</BaseLayout>
